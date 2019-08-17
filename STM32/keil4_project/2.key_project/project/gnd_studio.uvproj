@@ -350,7 +350,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\firmware_lib\inc;..\system\inc;..\user_lib\delay;..\user_lib\usart</IncludePath>
+              <IncludePath>..\firmware_lib\inc;..\system\inc;..\user_lib\delay;..\user_lib\usart;..\user_lib\key;..\user_lib\led</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -462,9 +462,14 @@
               <FilePath>..\user_lib\delay\delay.c</FilePath>
             </File>
             <File>
-              <FileName>usart.c</FileName>
+              <FileName>key.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\user_lib\usart\usart.c</FilePath>
+              <FilePath>..\user_lib\key\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\led\led.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,5 +1,5 @@
-#ifndef __USART_H
-#define __USART_H
+#ifndef __LED_H
+#define __LED_H
 
 #include "stm32f10x.h"
 
