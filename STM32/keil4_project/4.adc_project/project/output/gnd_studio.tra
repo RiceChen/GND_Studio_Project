@@ -1,0 +1,32 @@
+*** Creating Trace Output File '.\output\gnd_studio.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\output\main.o"'
+### List of Objects: adding '".\output\stm32f10x_gpio.o"'
+### List of Objects: adding '".\output\misc.o"'
+### List of Objects: adding '".\output\stm32f10x_rcc.o"'
+### List of Objects: adding '".\output\stm32f10x_usart.o"'
+### List of Objects: adding '".\output\stm32f10x_adc.o"'
+### List of Objects: adding '".\output\core_cm3.o"'
+### List of Objects: adding '".\output\startup_stm32f10x_md.o"'
+### List of Objects: adding '".\output\stm32f10x_it.o"'
+### List of Objects: adding '".\output\system_stm32f10x.o"'
+### List of Objects: adding '".\output\delay.o"'
+### List of Objects: adding '".\output\adc.o"'
+### List of Objects: adding '".\output\usart.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\output\main.o" ".\output\stm32f10x_gpio.o" ".\output\misc.o" ".\output\stm32f10x_rcc.o" ".\output\stm32f10x_usart.o" ".\output\stm32f10x_adc.o" ".\output\core_cm3.o" ".\output\startup_stm32f10x_md.o" ".\output\stm32f10x_it.o" ".\output\system_stm32f10x.o" ".\output\delay.o" ".\output\adc.o" ".\output\usart.o" 
+--strict --scatter ".\output\gnd_studio.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\gnd_studio.map" -o .\output\gnd_studio.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\output\gnd_studio.axf'
+### ADS-LD Command File: '.\output\gnd_studio.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\output\gnd_studio.lnp', Handle=0x00001010
+### Writing '.lnp' file
+### ADS-LD Command file '.\output\gnd_studio.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
