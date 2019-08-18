@@ -350,7 +350,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\firmware_lib\inc;..\system\inc;..\user_lib\delay;..\user_lib\usart;..\user_lib\key;..\user_lib\led</IncludePath>
+              <IncludePath>..\firmware_lib\inc;..\system\inc;..\user_lib\delay;..\user_lib\pwm</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -421,6 +421,11 @@
               <FileType>1</FileType>
               <FilePath>..\firmware_lib\src\stm32f10x_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\firmware_lib\src\stm32f10x_tim.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -462,14 +467,9 @@
               <FilePath>..\user_lib\delay\delay.c</FilePath>
             </File>
             <File>
-              <FileName>key.c</FileName>
+              <FileName>pwm.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\user_lib\key\key.c</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user_lib\led\led.c</FilePath>
+              <FilePath>..\user_lib\pwm\pwm.c</FilePath>
             </File>
           </Files>
         </Group>
