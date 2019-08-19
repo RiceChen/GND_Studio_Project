@@ -462,11 +462,6 @@
               <FilePath>..\user_lib\delay\delay.c</FilePath>
             </File>
             <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user_lib\usart\usart.c</FilePath>
-            </File>
-            <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user_lib\led\led.c</FilePath>

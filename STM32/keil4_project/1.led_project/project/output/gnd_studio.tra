@@ -11,10 +11,9 @@
 ### List of Objects: adding '".\output\stm32f10x_it.o"'
 ### List of Objects: adding '".\output\system_stm32f10x.o"'
 ### List of Objects: adding '".\output\delay.o"'
-### List of Objects: adding '".\output\usart.o"'
 ### List of Objects: adding '".\output\led.o"'
 ### ADS-LD Command completed:
---cpu Cortex-M3 ".\output\main.o" ".\output\stm32f10x_gpio.o" ".\output\misc.o" ".\output\stm32f10x_rcc.o" ".\output\stm32f10x_usart.o" ".\output\core_cm3.o" ".\output\startup_stm32f10x_md.o" ".\output\stm32f10x_it.o" ".\output\system_stm32f10x.o" ".\output\delay.o" ".\output\usart.o" ".\output\led.o" 
+--cpu Cortex-M3 ".\output\main.o" ".\output\stm32f10x_gpio.o" ".\output\misc.o" ".\output\stm32f10x_rcc.o" ".\output\stm32f10x_usart.o" ".\output\core_cm3.o" ".\output\startup_stm32f10x_md.o" ".\output\stm32f10x_it.o" ".\output\system_stm32f10x.o" ".\output\delay.o" ".\output\led.o" 
 --strict --scatter ".\output\gnd_studio.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
@@ -22,7 +21,7 @@
 ### ADS-LD Output File: '.\output\gnd_studio.axf'
 ### ADS-LD Command File: '.\output\gnd_studio.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\output\gnd_studio.lnp', Handle=0x00000354
+### Creating CmdFile '.\output\gnd_studio.lnp', Handle=0x00000490
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\output\gnd_studio.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
