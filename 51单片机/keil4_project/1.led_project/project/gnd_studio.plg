@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\aPrivateDoc\321\GND_Studio_Project\51µ¥Æ¬»ú\keil4_project\1.led_project\project\gnd_studio.uvproj
+Project File Date:  08/21/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(9): error C202: 'GPIO_setBits': undefined identifier
+..\MAIN\MAIN.C(9): error C141: syntax error near '}'
+compiling delay.c...
+..\user_lib\delay\delay.c(7): warning C318: can't open file 'sys.h'
+compiling led.c...
+..\USER_LIB\LED\LED.C(5): error C202: 'LED0': undefined identifier
+..\USER_LIB\LED\LED.C(6): error C202: 'LED1': undefined identifier
+..\USER_LIB\LED\LED.C(11): error C202: 'TRUE': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(9): error C202: 'GPIO_setBits': undefined identifier
+..\MAIN\MAIN.C(9): error C141: syntax error near '}'
+compiling delay.c...
+..\user_lib\delay\delay.c(7): warning C318: can't open file 'sys.h'
+compiling led.c...
+..\user_lib\led\led.c(2): warning C318: can't open file 'sys.h'
+..\USER_LIB\LED\LED.C(6): error C202: 'P22': undefined identifier
+..\USER_LIB\LED\LED.C(7): error C202: 'P24': undefined identifier
+..\USER_LIB\LED\LED.C(12): error C202: 'TRUE': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(9): error C202: 'GPIO_setBits': undefined identifier
+..\MAIN\MAIN.C(9): error C141: syntax error near '}'
+compiling delay.c...
+..\MAIN\SYS.H(4): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(5): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(6): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(7): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(8): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(9): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(10): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(11): error C202: 'P0': undefined identifier
+..\MAIN\SYS.H(12): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(13): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(14): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(15): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(16): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(17): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(18): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(19): error C202: 'P1': undefined identifier
+..\MAIN\SYS.H(20): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(21): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(22): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(23): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(24): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(25): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(26): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(27): error C202: 'P2': undefined identifier
+..\MAIN\SYS.H(28): error C202: 'P3': undefined identifier
+..\MAIN\SYS.H(29): error C202: 'P3': undefined identifier
+..\MAIN\SYS.H(30): error C202: 'P3': undefined identifier
+..\MAIN\SYS.H(31): error C202: 'P3': undefined identifier
+..\MAIN\SYS.H(32): error C202: 'P3': undefined identifier
+..\MAIN\SYS.H(33): error C202: 'P3': undefined identifier
+..\MAIN\SYS.H(34): error C202: 'P3': undefined identifier
+..\MAIN\SYS.H(35): error C202: 'P3': undefined identifier
+compiling led.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(9): error C202: 'GPIO_setBits': undefined identifier
+..\MAIN\MAIN.C(9): error C141: syntax error near '}'
+compiling delay.c...
+compiling led.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(9): warning C206: 'delay_ms': missing function-prototype
+..\MAIN\MAIN.C(9): error C267: 'delay_ms': requires ANSI-style prototype
+compiling delay.c...
+compiling led.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling led.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ENABLE?LED
+Program Size: data=9.0 xdata=0 code=77
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 4 Warning(s).
