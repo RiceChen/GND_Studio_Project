@@ -1,0 +1,96 @@
+C51 COMPILER V9.00   SINGLE                                                                08/23/2019 11:40:28 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE SINGLE
+OBJECT MODULE PLACED IN .\output\single.obj
+COMPILER INVOKED BY: E:\KEIL4\C51\BIN\C51.EXE ..\user_lib\single\single.c BROWSE INCDIR(..\user_lib\delay;..\user_lib\us
+                    -art;..\user_lib\dht11;..\user_lib\single;..\main) DEBUG OBJECTEXTEND PRINT(.\single.lst) OBJECT(.\output\single.obj)
+
+line level    source
+
+   1          /***************************************************
+   2           *         Author: Hoky GUAN                       *
+   3           *         Date  : 2019/7/15                       *
+   4           *         Last  : 2019/7/15                       *
+   5           *         Notes : single.c                        *
+   6           *                 P1^6 | Data                     *
+   7           **************************************************/
+   8          #include "sys.h"
+   9          #include "single.h"
+  10          #include "delay.h"
+  11          
+  12          void single_enable(char enable)
+  13          {
+  14   1              if(enable == TRUE)
+  15   1              {
+  16   2                      P16 = 1;
+  17   2              }
+  18   1      }
+  19          
+  20          void single_set_pin(void)
+  21          {
+  22   1              P16 = 1;
+  23   1      }
+  24          
+  25          void single_reset_pin(void)
+  26          {
+  27   1              P16 = 0;
+  28   1      }
+  29          
+  30          unsigned char single_read_pin(void)
+  31          {
+  32   1              return P16;
+  33   1      }
+  34          
+  35          unsigned char single_read_byte(void)
+  36          {
+  37   1              /* unsigned char i, value=0;
+  38   1              for(i=0;i<8;i++)
+  39   1              {          
+  40   1              while(Data == 0);
+  41   1                      delay_10us();
+  42   1                      delay_10us();
+  43   1                      delay_10us();
+  44   1                      delay_10us();
+  45   1                      value<<=1;
+  46   1                      if(Data == 1)     
+  47   1                      value=value|0x01;
+  48   1              while(Data == 1);    
+  49   1          }  
+  50   1          return value; */
+  51   1              unsigned char i, value=0;
+  52   1              for(i=0;i<8;i++)    
+  53   1              {
+  54   2                      while(single_read_pin() == Bit_RESET);
+C51 COMPILER V9.00   SINGLE                                                                08/23/2019 11:40:28 PAGE 2   
+
+  55   2                      delay_10us();
+  56   2                      delay_10us();
+  57   2                      delay_10us();
+  58   2                      delay_10us();
+  59   2                      if(single_read_pin() == Bit_SET)
+  60   2                      {
+  61   3                              while(single_read_pin() == Bit_SET);
+  62   3                              value|=(unsigned char)(0x01<<(7-i));
+  63   3                      }
+  64   2                      else
+  65   2                      {                          
+  66   3                              value&=(unsigned char)~(0x01<<(7-i));
+  67   3                      }
+  68   2              }
+  69   1              return value;
+  70   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    108    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

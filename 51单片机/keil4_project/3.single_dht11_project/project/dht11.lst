@@ -1,0 +1,99 @@
+C51 COMPILER V9.00   DHT11                                                                 08/23/2019 11:40:28 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE DHT11
+OBJECT MODULE PLACED IN .\output\dht11.obj
+COMPILER INVOKED BY: E:\KEIL4\C51\BIN\C51.EXE ..\user_lib\dht11\dht11.c BROWSE INCDIR(..\user_lib\delay;..\user_lib\usar
+                    -t;..\user_lib\dht11;..\user_lib\single;..\main) DEBUG OBJECTEXTEND PRINT(.\dht11.lst) OBJECT(.\output\dht11.obj)
+
+line level    source
+
+   1          /***************************************************
+   2           *         Author: Hoky GUAN                       *
+   3           *         Date  : 2019/7/15                       *
+   4           *         Last  : 2019/7/15                       *
+   5           *         Notes : dht11.h                         *
+   6           **************************************************/
+   7          #include "sys.h"
+   8          #include "dht11.h"
+   9          #include "single.h"
+  10          #include "delay.h"
+  11          
+  12          dht11_data_t dht11_data;
+  13          
+  14          void dht11_enable(char enable)
+  15          {
+  16   1              single_enable(enable);
+  17   1      }
+  18          
+  19          unsigned char dht11_read_data(void)
+  20          {
+  21   1              single_reset_pin();
+  22   1              delay_ms(20);
+  23   1              single_set_pin();
+  24   1              delay_10us();
+  25   1              delay_10us();
+  26   1              delay_10us();
+  27   1              if(single_read_pin()==Bit_RESET)
+  28   1              {
+  29   2                      while(single_read_pin()==Bit_RESET);
+  30   2                      delay_10us();
+  31   2                      delay_10us();
+  32   2                      delay_10us();
+  33   2                      delay_10us();
+  34   2                      delay_10us();
+  35   2                      delay_10us();
+  36   2                      delay_10us();
+  37   2                      delay_10us();
+  38   2                      dht11_data.humi_int             = single_read_byte();
+  39   2                      dht11_data.humi_deci    = single_read_byte();
+  40   2                      dht11_data.temp_int             = single_read_byte();
+  41   2                      dht11_data.temp_deci    = single_read_byte();
+  42   2                      dht11_data.check_sum    = single_read_byte();
+  43   2                      single_set_pin();
+  44   2                      if(dht11_data.check_sum == dht11_data.humi_int + dht11_data.humi_deci + dht11_data.temp_int+ dht11_data.
+             -temp_deci)
+  45   2                              return TRUE;
+  46   2                      else
+  47   2                              return FALSE;
+  48   2              }
+  49   1              
+  50   1              return FALSE;
+  51   1      }
+  52          
+  53          unsigned int dht11_humi_int(void)
+C51 COMPILER V9.00   DHT11                                                                 08/23/2019 11:40:28 PAGE 2   
+
+  54          {
+  55   1              return dht11_data.humi_int;
+  56   1      }
+  57          
+  58          unsigned int dht11_humi_deci(void)
+  59          {
+  60   1              return dht11_data.humi_deci;
+  61   1      }
+  62          
+  63          unsigned int dht11_temp_int(void)
+  64          {
+  65   1              return dht11_data.temp_int;
+  66   1      }
+  67          
+  68          unsigned int dht11_temp_deci(void)
+  69          {
+  70   1              return dht11_data.temp_deci;
+  71   1      }
+  72                  
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    151    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      5    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,202 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/23/2019  11:33:10  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+E:\KEIL4\C51\BIN\BL51.EXE .\output\main.obj, .\output\delay.obj, .\output\led.obj TO .\output\gnd_studio PRINT (.\gnd_st
+>> udio.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\output\main.obj (MAIN)
+  .\output\delay.obj (DELAY)
+  .\output\led.obj (LED)
+  E:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\output\gnd_studio (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0015H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0018H     0014H     UNIT         ?PR?MAIN?MAIN
+            CODE    002CH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0038H     0007H     UNIT         ?PR?_LED_ENABLE?LED
+            CODE    003FH     0005H     UNIT         ?PR?DELAY_10US?DELAY
+            CODE    0044H     0005H     UNIT         ?PR?LED_INIT?LED
+            CODE    0049H     0003H     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    004CH     0001H     UNIT         ?PR?DELAY_5US?DELAY
+
+
+
+OVERLAY MAP OF MODULE:   .\output\gnd_studio (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?_DELAY_MS?DELAY
+
+
+
+SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/23/2019  11:33:10  PAGE 2
+
+
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0018H         PUBLIC        main
+  B:00A0H.2       PUBLIC        P22
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:0018H         LINE#         5
+  C:0018H         LINE#         6
+  C:0018H         LINE#         7
+  C:0018H         LINE#         8
+  C:0018H         LINE#         9
+  C:001AH         LINE#         10
+  C:0021H         LINE#         11
+  C:0023H         LINE#         12
+  C:002AH         LINE#         13
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  C:004CH         PUBLIC        delay_5us
+  D:00B8H         PUBLIC        IP
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:003FH         PUBLIC        delay_10us
+  C:0003H         PUBLIC        _delay_ms
+  C:0049H         PUBLIC        _delay_us
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        xms
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         10
+  C:0003H         LINE#         11
+  C:0003H         LINE#         13
+  C:000CH         LINE#         14
+  C:000CH         LINE#         15
+  C:0017H         LINE#         16
+  C:0017H         LINE#         17
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        xus
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/23/2019  11:33:10  PAGE 3
+
+
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0049H         LINE#         19
+  C:0049H         LINE#         20
+  C:0049H         LINE#         22
+  C:0049H         LINE#         23
+  C:004BH         LINE#         24
+  -------         ENDPROC       _DELAY_US
+  -------         PROC          DELAY_10US
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:003FH         LINE#         26
+  C:003FH         LINE#         27
+  C:003FH         LINE#         29
+  C:0041H         LINE#         30
+  C:0043H         LINE#         31
+  -------         ENDPROC       DELAY_10US
+  -------         PROC          DELAY_5US
+  C:004CH         LINE#         33
+  C:004CH         LINE#         34
+  C:004CH         LINE#         35
+  -------         ENDPROC       DELAY_5US
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  C:0038H         PUBLIC        _led_enable
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  B:00A0H.2       PUBLIC        P22
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  B:00A0H.4       PUBLIC        P24
+  C:0044H         PUBLIC        led_init
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          LED_INIT
+  C:0044H         LINE#         4
+  C:0044H         LINE#         5
+  C:0044H         LINE#         6
+  C:0046H         LINE#         7
+  C:0048H         LINE#         8
+  -------         ENDPROC       LED_INIT
+  -------         PROC          _LED_ENABLE
+  D:0007H         SYMBOL        enable
+  C:0038H         LINE#         10
+  C:0038H         LINE#         11
+  C:0038H         LINE#         12
+  C:003BH         LINE#         13
+  C:003BH         LINE#         14
+  C:003EH         LINE#         15
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/23/2019  11:33:10  PAGE 4
+
+
+  C:003EH         LINE#         16
+  -------         ENDPROC       _LED_ENABLE
+  -------         ENDMOD        LED
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ENABLE?LED
+
+Program Size: data=9.0 xdata=0 code=77
+LINK/LOCATE RUN COMPLETE.  4 WARNING(S),  0 ERROR(S)
