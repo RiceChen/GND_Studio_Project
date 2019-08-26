@@ -1,5 +1,0 @@
---cpu Cortex-M3 ".\output\main.o" ".\output\stm32f10x_gpio.o" ".\output\misc.o" ".\output\stm32f10x_rcc.o" ".\output\stm32f10x_usart.o" ".\output\core_cm3.o" ".\output\startup_stm32f10x_md.o" ".\output\stm32f10x_it.o" ".\output\system_stm32f10x.o" ".\output\delay.o" ".\output\usart.o" 
---strict --scatter ".\output\gnd_studio.sct" 
---summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\gnd_studio.map" -o .\output\gnd_studio.axf

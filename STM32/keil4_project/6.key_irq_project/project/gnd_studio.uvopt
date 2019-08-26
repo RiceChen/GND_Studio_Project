@@ -195,9 +195,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>36</ColumnNumber>
+      <ColumnNumber>38</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>21</TopLine>
+      <TopLine>14</TopLine>
       <CurrentLine>30</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\main\main.c</PathWithFileName>
@@ -221,7 +221,7 @@
       <Focus>0</Focus>
       <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>359</TopLine>
+      <TopLine>368</TopLine>
       <CurrentLine>374</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\firmware_lib\src\stm32f10x_gpio.c</PathWithFileName>
@@ -421,7 +421,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>19</TopLine>
+      <TopLine>10</TopLine>
       <CurrentLine>21</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user_lib\exit\exit.c</PathWithFileName>

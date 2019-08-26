@@ -195,7 +195,7 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>16</ColumnNumber>
+      <ColumnNumber>18</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>14</CurrentLine>
@@ -221,7 +221,7 @@
       <Focus>0</Focus>
       <ColumnNumber>12</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>368</TopLine>
+      <TopLine>373</TopLine>
       <CurrentLine>380</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\firmware_lib\src\stm32f10x_gpio.c</PathWithFileName>
@@ -285,7 +285,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>701</TopLine>
+      <TopLine>702</TopLine>
       <CurrentLine>708</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\firmware_lib\src\stm32f10x_adc.c</PathWithFileName>
@@ -403,9 +403,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>19</ColumnNumber>
+      <ColumnNumber>20</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>26</TopLine>
+      <TopLine>15</TopLine>
       <CurrentLine>44</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user_lib\adc\adc.c</PathWithFileName>
@@ -421,7 +421,7 @@
       <Focus>0</Focus>
       <ColumnNumber>17</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>53</TopLine>
+      <TopLine>42</TopLine>
       <CurrentLine>55</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user_lib\usart\usart.c</PathWithFileName>

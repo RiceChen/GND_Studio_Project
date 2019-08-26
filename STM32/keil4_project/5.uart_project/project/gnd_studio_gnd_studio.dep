@@ -1,119 +1,0 @@
-Dependencies for Project 'gnd_studio', Target 'gnd_studio': (DO NOT MODIFY !)
-F (..\main\main.c)(0x5D58BDFB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\main.o" --omf_browse ".\output\main.crf" --depend ".\output\main.d")
-I (..\user_lib\delay\delay.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-I (..\user_lib\usart\usart.h)(0x5D58BDC7)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
-F (..\firmware_lib\src\stm32f10x_gpio.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\stm32f10x_gpio.o" --omf_browse ".\output\stm32f10x_gpio.crf" --depend ".\output\stm32f10x_gpio.d")
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-F (..\firmware_lib\src\misc.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\misc.o" --omf_browse ".\output\misc.crf" --depend ".\output\misc.d")
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-F (..\firmware_lib\src\stm32f10x_rcc.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\stm32f10x_rcc.o" --omf_browse ".\output\stm32f10x_rcc.crf" --depend ".\output\stm32f10x_rcc.d")
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-F (..\firmware_lib\src\stm32f10x_usart.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\stm32f10x_usart.o" --omf_browse ".\output\stm32f10x_usart.crf" --depend ".\output\stm32f10x_usart.d")
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-F (..\start_up\core_cm3.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\core_cm3.o" --omf_browse ".\output\core_cm3.crf" --depend ".\output\core_cm3.d")
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-F (..\start_up\startup_stm32f10x_md.s)(0x5D57F2EB)(--cpu Cortex-M3 -g --apcs=interwork -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x --list ".\startup_stm32f10x_md.lst" --xref -o ".\output\startup_stm32f10x_md.o" --depend ".\output\startup_stm32f10x_md.d")
-F (..\system\src\stm32f10x_it.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\stm32f10x_it.o" --omf_browse ".\output\stm32f10x_it.crf" --depend ".\output\stm32f10x_it.d")
-I (..\system\inc\stm32f10x_it.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-F (..\system\src\system_stm32f10x.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\system_stm32f10x.o" --omf_browse ".\output\system_stm32f10x.crf" --depend ".\output\system_stm32f10x.d")
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-F (..\user_lib\delay\delay.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\delay.o" --omf_browse ".\output\delay.crf" --depend ".\output\delay.d")
-I (..\user_lib\delay\delay.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
-F (..\user_lib\usart\usart.c)(0x5D57F2EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\firmware_lib\inc -I..\system\inc -I..\user_lib\delay -I..\user_lib\usart -I D:\SOFTWARE\Keil4\ARM\RV31\INC -I D:\SOFTWARE\Keil4\ARM\CMSIS\Include -I D:\SOFTWARE\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -o ".\output\usart.o" --omf_browse ".\output\usart.crf" --depend ".\output\usart.d")
-I (..\user_lib\usart\usart.h)(0x5D58BDC7)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
-I (..\system\inc\stm32f10x.h)(0x5D57F2EB)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50875B7E)
-I (D:\SOFTWARE\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x50875B7E)
-I (..\system\inc\system_stm32f10x.h)(0x5D57F2EB)
-I (..\system\inc\stm32f10x_conf.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_gpio.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_rcc.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\stm32f10x_usart.h)(0x5D57F2EB)
-I (..\firmware_lib\inc\misc.h)(0x5D57F2EB)
