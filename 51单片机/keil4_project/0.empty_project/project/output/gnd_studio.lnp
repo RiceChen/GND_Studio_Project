@@ -1,0 +1,3 @@
+".\output\main.obj" 
+TO ".\output\gnd_studio" 
+PRINT(".\gnd_studio.m51") RAMSIZE(256) 
