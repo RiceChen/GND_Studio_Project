@@ -1,0 +1,88 @@
+C51 COMPILER V9.00   PWM                                                                   08/28/2019 14:04:16 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE PWM
+OBJECT MODULE PLACED IN .\output\pwm.obj
+COMPILER INVOKED BY: E:\KEIL4\C51\BIN\C51.EXE ..\user_lib\pwm\pwm.c BROWSE INCDIR(..\user_lib\delay;..\user_lib\pwm;..\m
+                    -ain) DEBUG OBJECTEXTEND PRINT(.\pwm.lst) OBJECT(.\output\pwm.obj)
+
+line level    source
+
+   1          /***************************************************
+   2           *         Author: Hoky GUAN                       *
+   3           *         Date  : 2019/7/25                       *
+   4           *         Last  : 2019/7/25                       *
+   5           *         Notes : pwm.c                           *
+   6           **************************************************/
+   7          #include "sys.h"
+   8          #include "pwm.h"
+   9          
+  10          unsigned char High_H, High_L, Low_H, Low_L, flag = 1;
+  11          
+  12          void pwm_init()
+  13          {
+  14   1              TMOD = 0x01;
+  15   1              ET0 = 1;
+  16   1              EA = 1;
+  17   1              TR0 = 1;
+  18   1      }
+  19          
+  20          void pwm_enable(char enable)
+  21          {
+  22   1              if(enable == TRUE)
+  23   1              {
+  24   2                      pwm_init();
+  25   2              }
+  26   1              else
+  27   1              {
+  28   2                      EA = 0;
+  29   2                      TR0 = 0;
+  30   2              }                       
+  31   1      }
+  32          
+  33          void pwm_config(unsigned char duty)
+  34          {
+  35   1              if(duty > 100)
+  36   1                      duty = 100;
+  37   1              else if (duty < 0 )
+  38   1                      duty = 0;
+  39   1      
+  40   1              High_H = (65535-duty)/256;
+  41   1              High_L = (65535-duty)%256;
+  42   1              Low_H  = (65535-(100-duty))/256;
+  43   1              Low_L  = (65535-(100-duty))%256;        
+  44   1      }
+  45          
+  46          void Timer0_pwm() interrupt 1
+  47          {
+  48   1              if(flag)
+  49   1              {
+  50   2                      TH0 = High_H;
+  51   2                      TH0 = High_L;
+  52   2                      GPIO_ResetBits(pwm);
+  53   2                      flag = 0;
+  54   2              }
+C51 COMPILER V9.00   PWM                                                                   08/28/2019 14:04:16 PAGE 2   
+
+  55   1              else
+  56   1              {
+  57   2                      TH0 = Low_H;
+  58   2                      TH0 = Low_L;
+  59   2                      GPIO_SetBits(pwm);
+  60   2                      flag = 1;       
+  61   2              }
+  62   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    225    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      5       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
