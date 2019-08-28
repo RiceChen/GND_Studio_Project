@@ -24,8 +24,8 @@
 #define __STM32F10x_CONF_H
 
 //gnd studio
-#define TRUE 		1
-#define FALSE 	1
+#define TRUE 	1
+#define FALSE 	0
 
 /* Includes ------------------------------------------------------------------*/
 /* Uncomment/Comment the line below to enable/disable peripheral header file inclusion */
