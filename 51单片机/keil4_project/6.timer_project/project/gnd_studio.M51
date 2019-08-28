@@ -1,0 +1,286 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/28/2019  16:25:12  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+E:\KEIL4\C51\BIN\BL51.EXE .\output\main.obj, .\output\delay.obj, .\output\led.obj, .\output\timer.obj TO .\output\gnd_st
+>> udio PRINT (.\gnd_studio.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\output\main.obj (MAIN)
+  .\output\delay.obj (DELAY)
+  .\output\led.obj (LED)
+  .\output\timer.obj (TIMER)
+  E:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  E:\KEIL4\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\output\gnd_studio (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?TIMER
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0007H     UNIT         ?PR?_LED_ENABLE?LED
+            CODE    000AH     0001H     UNIT         ?PR?DELAY_5US?DELAY
+            CODE    000BH     0003H     ABSOLUTE     
+            CODE    000EH     008CH     UNIT         ?C_C51STARTUP
+            CODE    009AH     0051H     UNIT         ?PR?TIMER?TIMER
+            CODE    00EBH     0015H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0100H     0012H     UNIT         ?PR?TIMER_INIT?TIMER
+            CODE    0112H     000EH     UNIT         ?PR?MAIN?MAIN
+            CODE    0120H     0007H     UNIT         ?PR?_TIMER_ENABLE?TIMER
+            CODE    0127H     0005H     UNIT         ?PR?DELAY_10US?DELAY
+            CODE    012CH     0005H     UNIT         ?PR?LED_INIT?LED
+            CODE    0131H     0004H     UNIT         ?C_INITSEG
+            CODE    0135H     0003H     UNIT         ?PR?_DELAY_US?DELAY
+
+
+
+OVERLAY MAP OF MODULE:   .\output\gnd_studio (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?PR?TIMER?TIMER
+  +--> ?PR?_DELAY_MS?DELAY
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  16:25:12  PAGE 2
+
+
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?_LED_ENABLE?LED
+  +--> ?PR?_TIMER_ENABLE?TIMER
+
+?PR?_LED_ENABLE?LED
+  +--> ?PR?LED_INIT?LED
+
+?PR?_TIMER_ENABLE?TIMER
+  +--> ?PR?TIMER_INIT?TIMER
+
+
+
+SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0112H         PUBLIC        main
+  B:0090H.2       PUBLIC        P12
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:0112H         LINE#         7
+  C:0112H         LINE#         8
+  C:0112H         LINE#         9
+  C:0117H         LINE#         10
+  C:011CH         LINE#         11
+  C:011CH         LINE#         12
+  C:011CH         LINE#         13
+  C:011EH         LINE#         14
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  C:000AH         PUBLIC        delay_5us
+  D:00B8H         PUBLIC        IP
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  16:25:12  PAGE 3
+
+
+  C:0127H         PUBLIC        delay_10us
+  C:00EBH         PUBLIC        _delay_ms
+  C:0135H         PUBLIC        _delay_us
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        xms
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:00EBH         LINE#         10
+  C:00EBH         LINE#         11
+  C:00EBH         LINE#         13
+  C:00F4H         LINE#         14
+  C:00F4H         LINE#         15
+  C:00FFH         LINE#         16
+  C:00FFH         LINE#         17
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        xus
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0135H         LINE#         19
+  C:0135H         LINE#         20
+  C:0135H         LINE#         22
+  C:0135H         LINE#         23
+  C:0137H         LINE#         24
+  -------         ENDPROC       _DELAY_US
+  -------         PROC          DELAY_10US
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0127H         LINE#         26
+  C:0127H         LINE#         27
+  C:0127H         LINE#         29
+  C:0129H         LINE#         30
+  C:012BH         LINE#         31
+  -------         ENDPROC       DELAY_10US
+  -------         PROC          DELAY_5US
+  C:000AH         LINE#         33
+  C:000AH         LINE#         34
+  C:000AH         LINE#         35
+  -------         ENDPROC       DELAY_5US
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  C:0003H         PUBLIC        _led_enable
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  B:00A0H.2       PUBLIC        P22
+  D:0098H         PUBLIC        SCON
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  16:25:12  PAGE 4
+
+
+  D:0088H         PUBLIC        TCON
+  B:00A0H.4       PUBLIC        P24
+  C:012CH         PUBLIC        led_init
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          LED_INIT
+  C:012CH         LINE#         10
+  C:012CH         LINE#         11
+  C:012CH         LINE#         12
+  C:012EH         LINE#         13
+  C:0130H         LINE#         14
+  -------         ENDPROC       LED_INIT
+  -------         PROC          _LED_ENABLE
+  D:0007H         SYMBOL        enable
+  C:0003H         LINE#         16
+  C:0003H         LINE#         17
+  C:0003H         LINE#         18
+  C:0006H         LINE#         19
+  C:0006H         LINE#         20
+  C:0009H         LINE#         21
+  C:0009H         LINE#         22
+  -------         ENDPROC       _LED_ENABLE
+  -------         ENDMOD        LED
+
+  -------         MODULE        TIMER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:0008H         PUBLIC        flag
+  C:009AH         PUBLIC        timer
+  B:0090H.2       PUBLIC        P12
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  C:0100H         PUBLIC        timer_init
+  B:00A8H.1       PUBLIC        ET0
+  B:0088H.5       PUBLIC        TF0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  B:0088H.4       PUBLIC        TR0
+  D:00C8H         PUBLIC        T2CON
+  D:0009H         PUBLIC        i
+  C:0120H         PUBLIC        _timer_enable
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          TIMER_INIT
+  C:0100H         LINE#         13
+  C:0100H         LINE#         14
+  C:0100H         LINE#         15
+  C:0103H         LINE#         16
+  C:0105H         LINE#         17
+  C:0107H         LINE#         18
+  C:010AH         LINE#         19
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  16:25:12  PAGE 5
+
+
+  C:010DH         LINE#         20
+  C:010FH         LINE#         21
+  C:0111H         LINE#         22
+  -------         ENDPROC       TIMER_INIT
+  -------         PROC          _TIMER_ENABLE
+  D:0007H         SYMBOL        enable
+  C:0120H         LINE#         24
+  C:0120H         LINE#         25
+  C:0120H         LINE#         26
+  C:0123H         LINE#         27
+  C:0123H         LINE#         28
+  C:0126H         LINE#         29
+  C:0126H         LINE#         30
+  -------         ENDPROC       _TIMER_ENABLE
+  -------         PROC          TIMER
+  C:009AH         LINE#         32
+  C:00B7H         LINE#         34
+  C:00B9H         LINE#         35
+  C:00BCH         LINE#         36
+  C:00BFH         LINE#         37
+  C:00C2H         LINE#         38
+  C:00C2H         LINE#         39
+  C:00C2H         LINE#         40
+  C:00C5H         LINE#         41
+  C:00C7H         LINE#         42
+  C:00CEH         LINE#         43
+  C:00CEH         LINE#         44
+  C:00D0H         LINE#         45
+  -------         ENDPROC       TIMER
+  -------         ENDMOD        TIMER
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+
+Program Size: data=11.0 xdata=0 code=312
+LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)
