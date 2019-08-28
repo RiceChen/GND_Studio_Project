@@ -1,0 +1,62 @@
+C51 COMPILER V9.00   MAIN                                                                  08/24/2019 23:32:49 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\output\main.obj
+COMPILER INVOKED BY: E:\KEIL4\C51\BIN\C51.EXE ..\main\main.c BROWSE INCDIR(..\user_lib\delay;..\user_lib\key;..\user_lib
+                    -\led;..\main) DEBUG OBJECTEXTEND PRINT(.\main.lst) OBJECT(.\output\main.obj)
+
+line level    source
+
+   1          #include "sys.h"
+   2          #include "delay.h"
+   3          #include "led.h"
+   4          #include "key.h"
+   5          
+   6          int main(void)
+   7          {       
+   8   1              led_enable(TRUE);
+   9   1              key_enable(TRUE);       
+  10   1              for(;;)
+  11   1              {
+  12   2                      if(GPIO_ReadInputDataBit(P33) == 0)
+  13   2                      {
+  14   3                              delay_ms(10);
+  15   3                              if(GPIO_ReadInputDataBit(P33) == 0)
+  16   3                              {
+  17   4                                      GPIO_SetBits(P22);
+  18   4                              }
+  19   3                      }
+  20   2                      else
+  21   2                      {
+  22   3                              GPIO_ResetBits(P22);
+  23   3                      }
+  24   2                      
+  25   2                      if(GPIO_ReadInputDataBit(P21) == 0)
+  26   2                      {
+  27   3                              delay_ms(10);
+  28   3                              if(GPIO_ReadInputDataBit(P21) == 0)
+  29   3                              {
+  30   4                                      GPIO_SetBits(P24);
+  31   4                              }
+  32   3                      }
+  33   2                      else
+  34   2                      {
+  35   3                              GPIO_ResetBits(P24);
+  36   3                      }
+  37   2              }
+  38   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     50    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

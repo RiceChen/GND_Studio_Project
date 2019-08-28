@@ -1,19 +1,19 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        08/21/2019  16:46:44  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/27/2019  14:46:10  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-E:\KEIL4\C51\BIN\BL51.EXE .\main.obj TO gnd_studio RAMSIZE (256)
+E:\KEIL4\C51\BIN\BL51.EXE .\output\main.obj TO .\output\gnd_studio PRINT (.\gnd_studio.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
-  .\main.obj (MAIN)
+  .\output\main.obj (MAIN)
   E:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
-LINK MAP OF MODULE:  gnd_studio (MAIN)
+LINK MAP OF MODULE:  .\output\gnd_studio (MAIN)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -30,7 +30,7 @@ LINK MAP OF MODULE:  gnd_studio (MAIN)
 
 
 
-OVERLAY MAP OF MODULE:   gnd_studio (MAIN)
+OVERLAY MAP OF MODULE:   .\output\gnd_studio (MAIN)
 
 
 SEGMENT
@@ -41,7 +41,7 @@ SEGMENT
 
 
 
-SYMBOL TABLE OF MODULE:  gnd_studio (MAIN)
+SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
 
   VALUE           TYPE          NAME
   ----------------------------------
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  gnd_studio (MAIN)
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
   C:000FH         LINE#         3
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/21/2019  16:46:44  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/27/2019  14:46:10  PAGE 2
 
 
   C:000FH         LINE#         4
