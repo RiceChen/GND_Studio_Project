@@ -1,0 +1,38 @@
+C51 COMPILER V9.00   MAIN                                                                  08/28/2019 14:52:47 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\output\main.obj
+COMPILER INVOKED BY: E:\KEIL4\C51\BIN\C51.EXE ..\main\main.c BROWSE INCDIR(..\user_lib\delay;..\user_lib\usart;..\main) 
+                    -DEBUG OBJECTEXTEND PRINT(.\main.lst) OBJECT(.\output\main.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include "sys.h"
+   3          #include "delay.h"
+   4          #include "usart.h"
+   5          
+   6          int main(void)
+   7          {       
+   8   1              Usart_Enable(TRUE);
+   9   1              for(;;)
+  10   1              {
+  11   2                      printf("GND studio!!!\r\n");
+  12   2                      delay_ms(1000);
+  13   2              }
+  14   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     23    ----
+   CONSTANT SIZE    =     16    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

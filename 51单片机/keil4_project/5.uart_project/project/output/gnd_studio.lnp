@@ -1,0 +1,5 @@
+".\output\main.obj",
+".\output\delay.obj",
+".\output\usart.obj" 
+TO ".\output\gnd_studio" 
+PRINT(".\gnd_studio.m51") RAMSIZE(256) 
