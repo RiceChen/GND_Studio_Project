@@ -1,0 +1,285 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/28/2019  14:04:16  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+E:\KEIL4\C51\BIN\BL51.EXE .\output\main.obj, .\output\delay.obj, .\output\pwm.obj TO .\output\gnd_studio PRINT (.\gnd_st
+>> udio.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\output\main.obj (MAIN)
+  .\output\delay.obj (DELAY)
+  .\output\pwm.obj (PWM)
+  E:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  E:\KEIL4\C51\LIB\C51S.LIB (?C?SLDIV)
+  E:\KEIL4\C51\LIB\C51S.LIB (?C_INIT)
+  E:\KEIL4\C51\LIB\C51S.LIB (?C?ULDIV)
+
+
+LINK MAP OF MODULE:  .\output\gnd_studio (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0005H     UNIT         ?DT?PWM
+            DATA    000DH     0002H     UNIT         _DATA_GROUP_
+            IDATA   000FH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0005H     UNIT         ?PR?DELAY_10US?DELAY
+            CODE    0008H     0003H     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    000BH     0003H     ABSOLUTE     
+            CODE    000EH     00CEH     UNIT         ?C?LIB_CODE
+            CODE    00DCH     00ABH     UNIT         ?PR?_PWM_CONFIG?PWM
+            CODE    0187H     008CH     UNIT         ?C_C51STARTUP
+            CODE    0213H     0044H     UNIT         ?C?LDIV
+            CODE    0257H     0041H     UNIT         ?PR?MAIN?MAIN
+            CODE    0298H     0021H     UNIT         ?PR?TIMER0_PWM?PWM
+            CODE    02B9H     0015H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    02CEH     000BH     UNIT         ?PR?_PWM_ENABLE?PWM
+            CODE    02D9H     000AH     UNIT         ?PR?PWM_INIT?PWM
+            CODE    02E3H     0004H     UNIT         ?C_INITSEG
+            CODE    02E7H     0001H     UNIT         ?PR?DELAY_5US?DELAY
+
+
+
+OVERLAY MAP OF MODULE:   .\output\gnd_studio (MAIN)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  14:04:16  PAGE 2
+
+
+
+?PR?MAIN?MAIN                  000DH    0001H
+  +--> ?PR?_PWM_ENABLE?PWM
+  +--> ?PR?_PWM_CONFIG?PWM
+  +--> ?PR?_DELAY_MS?DELAY
+
+?PR?_PWM_ENABLE?PWM            -----    -----
+  +--> ?PR?PWM_INIT?PWM
+
+?PR?_PWM_CONFIG?PWM            000EH    0001H
+
+
+
+SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0257H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  -------         DO            
+  D:000DH         SYMBOL        i
+  -------         ENDDO         
+  C:0257H         LINE#         11
+  C:0257H         LINE#         12
+  C:0257H         LINE#         13
+  C:025CH         LINE#         14
+  C:025CH         LINE#         15
+  C:025CH         LINE#         17
+  C:0266H         LINE#         18
+  C:0266H         LINE#         19
+  C:026BH         LINE#         20
+  C:0272H         LINE#         21
+  C:027AH         LINE#         22
+  C:0284H         LINE#         23
+  C:0284H         LINE#         24
+  C:0289H         LINE#         25
+  C:0290H         LINE#         26
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  14:04:16  PAGE 3
+
+
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  C:02E7H         PUBLIC        delay_5us
+  D:00B8H         PUBLIC        IP
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:0003H         PUBLIC        delay_10us
+  C:02B9H         PUBLIC        _delay_ms
+  C:0008H         PUBLIC        _delay_us
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        xms
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:02B9H         LINE#         10
+  C:02B9H         LINE#         11
+  C:02B9H         LINE#         13
+  C:02C2H         LINE#         14
+  C:02C2H         LINE#         15
+  C:02CDH         LINE#         16
+  C:02CDH         LINE#         17
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        xus
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0008H         LINE#         19
+  C:0008H         LINE#         20
+  C:0008H         LINE#         22
+  C:0008H         LINE#         23
+  C:000AH         LINE#         24
+  -------         ENDPROC       _DELAY_US
+  -------         PROC          DELAY_10US
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         26
+  C:0003H         LINE#         27
+  C:0003H         LINE#         29
+  C:0005H         LINE#         30
+  C:0007H         LINE#         31
+  -------         ENDPROC       DELAY_10US
+  -------         PROC          DELAY_5US
+  C:02E7H         LINE#         33
+  C:02E7H         LINE#         34
+  C:02E7H         LINE#         35
+  -------         ENDPROC       DELAY_5US
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        PWM
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  14:04:16  PAGE 4
+
+
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:0008H         PUBLIC        flag
+  C:02CEH         PUBLIC        _pwm_enable
+  D:0009H         PUBLIC        High_H
+  D:000AH         PUBLIC        High_L
+  C:00DCH         PUBLIC        _pwm_config
+  B:0090H.2       PUBLIC        P12
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  B:00A8H.1       PUBLIC        ET0
+  D:008CH         PUBLIC        TH0
+  B:0088H.4       PUBLIC        TR0
+  D:000BH         PUBLIC        Low_H
+  D:000CH         PUBLIC        Low_L
+  D:00C8H         PUBLIC        T2CON
+  C:0298H         PUBLIC        Timer0_pwm
+  C:02D9H         PUBLIC        pwm_init
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          PWM_INIT
+  C:02D9H         LINE#         12
+  C:02D9H         LINE#         13
+  C:02D9H         LINE#         14
+  C:02DCH         LINE#         15
+  C:02DEH         LINE#         16
+  C:02E0H         LINE#         17
+  C:02E2H         LINE#         18
+  -------         ENDPROC       PWM_INIT
+  -------         PROC          _PWM_ENABLE
+  D:0007H         SYMBOL        enable
+  C:02CEH         LINE#         20
+  C:02CEH         LINE#         21
+  C:02CEH         LINE#         22
+  C:02D1H         LINE#         23
+  C:02D1H         LINE#         24
+  C:02D4H         LINE#         25
+  C:02D4H         LINE#         27
+  C:02D4H         LINE#         28
+  C:02D6H         LINE#         29
+  C:02D8H         LINE#         30
+  C:02D8H         LINE#         31
+  -------         ENDPROC       _PWM_ENABLE
+  -------         PROC          _PWM_CONFIG
+  D:000EH         SYMBOL        duty
+  C:00DCH         LINE#         33
+  C:00DEH         LINE#         34
+  C:00DEH         LINE#         35
+  C:00E5H         LINE#         36
+  C:00EAH         LINE#         37
+  C:00F1H         LINE#         38
+  C:00F4H         LINE#         40
+  C:0115H         LINE#         41
+  C:0138H         LINE#         42
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/28/2019  14:04:16  PAGE 5
+
+
+  C:015EH         LINE#         43
+  C:0186H         LINE#         44
+  -------         ENDPROC       _PWM_CONFIG
+  -------         PROC          TIMER0_PWM
+  C:0298H         LINE#         46
+  C:029AH         LINE#         48
+  C:029EH         LINE#         49
+  C:029EH         LINE#         50
+  C:02A1H         LINE#         51
+  C:02A4H         LINE#         52
+  C:02A6H         LINE#         53
+  C:02A9H         LINE#         54
+  C:02ABH         LINE#         56
+  C:02ABH         LINE#         57
+  C:02AEH         LINE#         58
+  C:02B1H         LINE#         59
+  C:02B3H         LINE#         60
+  C:02B6H         LINE#         61
+  C:02B6H         LINE#         62
+  -------         ENDPROC       TIMER0_PWM
+  -------         ENDMOD        PWM
+
+  -------         MODULE        ?C?SLDIV
+  C:0213H         PUBLIC        ?C?SLDIV
+  -------         ENDMOD        ?C?SLDIV
+
+  -------         MODULE        ?C?ULDIV
+  C:004AH         PUBLIC        ?C?ULDIV
+  -------         ENDMOD        ?C?ULDIV
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+
+Program Size: data=16.0 xdata=0 code=744
+LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)
