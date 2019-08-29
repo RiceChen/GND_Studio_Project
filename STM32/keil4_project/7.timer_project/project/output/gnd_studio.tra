@@ -23,7 +23,7 @@
 ### ADS-LD Output File: '.\output\gnd_studio.axf'
 ### ADS-LD Command File: '.\output\gnd_studio.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\output\gnd_studio.lnp', Handle=0x00000B94
+### Creating CmdFile '.\output\gnd_studio.lnp', Handle=0x000006A0
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\output\gnd_studio.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
