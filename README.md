@@ -1,6 +1,12 @@
-<div align=center>
-<img src="https://github.com/HokyGUAN/GND_Studio_Project/blob/master/51%E5%8D%95%E7%89%87%E6%9C%BA/pic/GND-logo.jpg" height="300" width="330" >
- </div>
+<div align="center">
+    <img src='./pic/GND-logo.jpg' height="192px"/>
+    <h1>
+        Awesome Interview
+    </h1>
+    <p>
+        Collection of awesome interview reference
+    </p>
+</div>
  <br>
  
 # <center>GND_Studio_Project<center>
