@@ -1,16 +1,16 @@
 <div align="center">
-    <img src='./pic/GND-logo.jpg' height="192px"/>
+    <img src='./51单片机/pic/GND-logo.jpg' height="300" width="330"/>
     <h1>
-        Awesome Interview
+        GND_Studio_Project
     </h1>
-    <p>
-        Collection of awesome interview reference
-    </p>
+    <h4>
+        By Harry   Hoky   Alvin
+    </h4>
 </div>
  <br>
  
-# <center>GND_Studio_Project<center>
-#### <center>By <font color=#ff0060>`Harry`</font> <font color=#ff0060>`Hoky`</font> <font color=#ff0060>`Alvin`</font><center>
+# <center><center>
+#### <center><center>
 
 <br>
 <br>
