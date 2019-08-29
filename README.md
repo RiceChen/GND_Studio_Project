@@ -28,10 +28,10 @@
 <h2 id="PCB">1.PCB
 <br>
 <div align=center>
-<img src="https://github.com/HokyGUAN/GND_Studio_Project/blob/master/51%E5%8D%95%E7%89%87%E6%9C%BA/pic/STC51.jpg" height="500" width="600" >
+<img src="https://github.com/HokyGUAN/GND_Studio_Project/blob/master/51%E5%8D%95%E7%89%87%E6%9C%BA/pic/STC51.jpg" height="500" width="800" >
  </div>
  <div align=center>
-<img src="https://github.com/HokyGUAN/GND_Studio_Project/blob/master/51%E5%8D%95%E7%89%87%E6%9C%BA/pic/STM32.jpg" height="500" width="600" >
+<img src="https://github.com/HokyGUAN/GND_Studio_Project/blob/master/51%E5%8D%95%E7%89%87%E6%9C%BA/pic/STM32.jpg" height="500" width="800" >
  </div>
 
 <h2 id="C51">2.C51
