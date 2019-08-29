@@ -8,7 +8,7 @@ int main(void)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 
 	delay_enable(TRUE);
-	iwdg_enable(4, 625, TRUE); //1s
+	iwdg_enable(IWDG_Prescaler_4, 625, TRUE); //1s
 	led_enable(TRUE);
 	key_enable(TRUE);
 	
