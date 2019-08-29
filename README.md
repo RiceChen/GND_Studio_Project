@@ -7,10 +7,6 @@
         By Harry   Hoky   Alvin
     </h4>
 </div>
- <br>
- 
-# <center><center>
-#### <center><center>
 
 <br>
 <br>
