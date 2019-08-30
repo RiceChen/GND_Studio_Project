@@ -1,11 +1,10 @@
 # C51单片机源代码
 by GND工作室 `HokyGUAN`
 
-<div align="center">
-<img src="https://github.com/HokyGUAN/GND_Studio_Project/blob/master/51%E5%8D%95%E7%89%87%E6%9C%BA/pic/GND-logo.jpg" height="400" width="420" >
+ <div align="center">
+   <img src='../pic/GND-logo.jpg' height="400" width="420"/>
  </div>
- <br>
- 
+
 ***
 #### 编译工具：KEIL4_C51 芯片型号：STC89C52
 ---
