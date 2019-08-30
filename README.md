@@ -1,5 +1,5 @@
 <div align="center">
-    <img src='./51单片机/pic/GND-logo.jpg' height="300" width="330"/>
+    <img src='./STC89C52/pic/GND-logo.jpg' height="300" width="330"/>
     <h1>
         GND_Studio_Project
     </h1>
