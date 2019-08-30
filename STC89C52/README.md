@@ -2,8 +2,8 @@
 by GND工作室 `HokyGUAN`
 
  <div align="center">
-   <img src='./pic/GND-logo.jpg' height="400" width="420"/>
-</div>
+   <img src='../pic/GND-logo.jpg' height="400" width="420"/>
+ </div>
 
 ***
 #### 编译工具：KEIL4_C51 芯片型号：STC89C52
