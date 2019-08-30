@@ -4,7 +4,7 @@
         GND_Studio_Project
     </h1>
     <h4>
-        By Harry   Hoky   Alvin
+        <h3>By</h3>Harry   Hoky   Alvin
     </h4>
 </div>
 
@@ -27,12 +27,11 @@
 
 <h2 id="PCB">1.PCB
 <br>
-<div align=center>
-<img src='./pic/STC51.jpg' height="500" width="800" >
- </div>
- <div align=center>
-<img src='./pic/STM32.jpg' height="500" width="800" >
- </div>
+    
+
+- [<h5> STC89C52 PCB </h5>](https://github.com/HokyGUAN/GND_Studio_Project/blob/master/pic/STC51.jpg/)
+
+- [<h5> STM32 PCB </h5>](https://github.com/HokyGUAN/GND_Studio_Project/blob/master/pic/STM32.jpg/)
 
 <h2 id="C51">2.C51
 <br>
