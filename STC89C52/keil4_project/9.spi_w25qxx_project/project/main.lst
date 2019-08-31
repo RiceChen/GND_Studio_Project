@@ -1,0 +1,49 @@
+C51 COMPILER V9.00   MAIN                                                                  08/31/2019 16:17:41 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\output\main.obj
+COMPILER INVOKED BY: E:\KEIL4\C51\BIN\C51.EXE ..\main\main.c COMPACT BROWSE INCDIR(..\main;..\user_lib\delay;..\user_lib
+                    -\spi;..\user_lib\usart;..\user_lib\w25qxx) DEBUG OBJECTEXTEND PRINT(.\main.lst) OBJECT(.\output\main.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #include "sys.h"
+   3          #include "delay.h"
+   4          #include "spi.h"
+   5          #include "w25qxx.h"
+   6          #include "usart.h"
+   7          
+   8          const unsigned char write_buffer[]={"GND studio"};
+   9          #define BUFFER_SIZE     sizeof(write_buffer)
+  10          
+  11          int main(void)
+  12          {
+  13   1              unsigned char read_buffer[BUFFER_SIZE];
+  14   1              Usart_Enable(TRUE);
+  15   1              spi_enable(TRUE);
+  16   1              if(w25qxx_read_id() != W25Q16)
+  17   1              {
+  18   2                      printf("error: no check w25q16\r\n");
+  19   2              }
+  20   1              w25qxx_write((unsigned char *)write_buffer, 1024, BUFFER_SIZE);
+  21   1              delay_ms(100);
+  22   1              w25qxx_read(read_buffer, 1024, BUFFER_SIZE);
+  23   1              printf("read buffer: %s\r\n", read_buffer);
+  24   1              while(1);
+  25   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    105    ----
+   CONSTANT SIZE    =     43    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =     11      11
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

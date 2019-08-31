@@ -1,0 +1,241 @@
+C51 COMPILER V9.00   W25QXX                                                                08/31/2019 16:17:41 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE W25QXX
+OBJECT MODULE PLACED IN .\output\w25qxx.obj
+COMPILER INVOKED BY: E:\KEIL4\C51\BIN\C51.EXE ..\user_lib\w25qxx\w25qxx.c COMPACT BROWSE INCDIR(..\main;..\user_lib\dela
+                    -y;..\user_lib\spi;..\user_lib\usart;..\user_lib\w25qxx) DEBUG OBJECTEXTEND PRINT(.\w25qxx.lst) OBJECT(.\output\w25qxx.ob
+                    -j)
+
+line level    source
+
+   1          /***************************************************
+   2           *         Author: Hoky GUAN                       *
+   3           *         Date  : 2019/7/15                       *
+   4           *         Last  : 2019/7/15                       *
+   5           *         Notes : w25qxx.c                        *
+   6           **************************************************/
+   7          #include "sys.h"
+   8          #include "w25qxx.h"
+   9          #include "spi.h"
+  10          #include "delay.h"
+  11          
+  12          #define W25QXX_WRITE_ENABLE                             0x06
+  13          #define W25QXX_WRITE_DISABLE                            0x04
+  14          #define W25QXX_READ_STATUS_REGISTER         0x05
+  15          #define W25QXX_WRITE_STATUS_REGISTER        0x01
+  16          #define W25QXX_READ_DATA                    0x03
+  17          #define W25QXX_FAST_READ_DATA                   0x0B 
+  18          #define W25QXX_FAST_READ_DUAL               0x3B
+  19          #define W25QXX_PAGE_PROGRAM                                     0x02
+  20          #define W25QXX_BALOCK_ERASE                                     0xD8
+  21          #define W25QXX_SECTOR_ERASE                                     0x20
+  22          #define W25QXX_CHIP_ERASE                                       0xC7
+  23          #define W25QXX_POWER_DOWN                                       0xB9
+  24          #define W25QXX_RELEASE_POWER_DOWN                       0xAB 
+  25          #define W25QXX_DEVICE_ID                                        0xAB
+  26          #define W25QXX_MANUFACT_DEVICE_ID                       0x90
+  27          #define W25QXX_JEDEC_DEVICE_ID                          0x9F
+  28          
+  29          unsigned char w25qxx_read_state_register()
+  30          {
+  31   1              unsigned char tmp;
+  32   1              GPIO_ResetBits(P03);
+  33   1              spi_read_write_byte(W25QXX_READ_STATUS_REGISTER);
+  34   1              tmp = spi_read_write_byte(0xff);
+  35   1              GPIO_SetBits(P03);
+  36   1              return tmp;
+  37   1      }
+  38          
+  39          void w25qxx_write_state_register(unsigned char state_register)   
+  40          {   
+  41   1              GPIO_ResetBits(P03);  
+  42   1              spi_read_write_byte(W25QXX_WRITE_STATUS_REGISTER);   
+  43   1              spi_read_write_byte(state_register); 
+  44   1              GPIO_SetBits(P03);            
+  45   1      }
+  46          
+  47          void w25qxx_write_enable(void)
+  48          {   
+  49   1              GPIO_ResetBits(P03); 
+  50   1          spi_read_write_byte(W25QXX_WRITE_ENABLE);
+  51   1          GPIO_SetBits(P03);
+  52   1      }
+  53          
+C51 COMPILER V9.00   W25QXX                                                                08/31/2019 16:17:41 PAGE 2   
+
+  54          void w25qxx_write_disable(void) 
+  55          {   
+  56   1              GPIO_ResetBits(P03); 
+  57   1          spi_read_write_byte(W25QXX_WRITE_DISABLE);
+  58   1          GPIO_SetBits(P03);
+  59   1      }
+  60          
+  61          void w25qxx_wait_busy(void)   
+  62          {   
+  63   1              while((w25qxx_read_state_register()&0x01)==0x01);  
+  64   1      }
+  65          
+  66          unsigned int w25qxx_read_id(void)
+  67          {
+  68   1              unsigned int tmp;
+  69   1              GPIO_ResetBits(P03); 
+  70   1              spi_read_write_byte(W25QXX_MANUFACT_DEVICE_ID);
+  71   1              spi_read_write_byte(0x00);
+  72   1              spi_read_write_byte(0x00);
+  73   1              spi_read_write_byte(0x00);
+  74   1              tmp |= spi_read_write_byte(0xff)<<8;
+  75   1              tmp |= spi_read_write_byte(0xff);
+  76   1              GPIO_SetBits(P03);
+  77   1              return tmp;
+  78   1      }
+  79          
+  80          void w25qxx_read(unsigned char *pBuffer, unsigned int ReadAddr, unsigned int NumByteToRead)
+  81          {
+  82   1              unsigned int i;
+  83   1              GPIO_ResetBits(P03);
+  84   1              spi_read_write_byte(W25QXX_READ_DATA);
+  85   1              spi_read_write_byte((unsigned char)(ReadAddr>>16)&0xff);
+  86   1              spi_read_write_byte((unsigned char)(ReadAddr>>8)&0xff);
+  87   1              spi_read_write_byte((unsigned char)ReadAddr&0xff);
+  88   1              for(i = 0; i < NumByteToRead; i++)
+  89   1                      pBuffer[i] = spi_read_write_byte(0xFF); 
+  90   1              GPIO_SetBits(P03);
+  91   1      }
+  92          
+  93          void w25qxx_write_page(unsigned char *pBuffer,unsigned int WriteAddr,unsigned int NumByteToWrite)
+  94          {
+  95   1              unsigned int i;
+  96   1              GPIO_ResetBits(P03);
+  97   1              w25qxx_write_enable();
+  98   1              GPIO_SetBits(P03);
+  99   1      
+ 100   1              GPIO_ResetBits(P03);
+ 101   1              spi_read_write_byte(W25QXX_PAGE_PROGRAM);
+ 102   1              spi_read_write_byte((unsigned char)((WriteAddr)>>16));
+ 103   1              spi_read_write_byte((unsigned char)((WriteAddr)>>8));   
+ 104   1              spi_read_write_byte((unsigned char)WriteAddr); 
+ 105   1              for(i = 0; i < NumByteToWrite; i++)
+ 106   1                      spi_read_write_byte(pBuffer[i]);        
+ 107   1              GPIO_SetBits(P03);
+ 108   1              w25qxx_wait_busy();
+ 109   1      }
+ 110          
+ 111          void w25qxx_write_no_check(unsigned char *pBuffer,unsigned int WriteAddr,unsigned int NumByteToWrite)   
+ 112          {                                        
+ 113   1              unsigned int pageremain;           
+ 114   1              pageremain = 256 - WriteAddr % 256;         
+ 115   1              if(NumByteToWrite<=pageremain) 
+C51 COMPILER V9.00   W25QXX                                                                08/31/2019 16:17:41 PAGE 3   
+
+ 116   1              {
+ 117   2                      pageremain = NumByteToWrite;
+ 118   2              }
+ 119   1              while(1)
+ 120   1              {          
+ 121   2                      w25qxx_write_page(pBuffer, WriteAddr, pageremain);
+ 122   2                      if(NumByteToWrite == pageremain)
+ 123   2                              break;
+ 124   2                      else
+ 125   2                      {
+ 126   3                              pBuffer += pageremain;
+ 127   3                              WriteAddr += pageremain;        
+ 128   3                              NumByteToWrite -= pageremain;
+ 129   3                              if(NumByteToWrite>256)
+ 130   3                                      pageremain = 256;
+ 131   3                              else 
+ 132   3                                      pageremain = NumByteToWrite;
+ 133   3                      }
+ 134   2              };          
+ 135   1      } 
+ 136          
+ 137          unsigned char xdata w25qxx_buffer[4096];                 
+ 138          void w25qxx_write(unsigned char *pBuffer,unsigned int WriteAddr,unsigned int NumByteToWrite)   
+ 139          { 
+ 140   1              unsigned int secpos;
+ 141   1              unsigned int secoff;
+ 142   1              unsigned int secremain;    
+ 143   1              unsigned int i;    
+ 144   1              unsigned char *W25QXX_BUF;        
+ 145   1              W25QXX_BUF = w25qxx_buffer;          
+ 146   1              secpos = WriteAddr / 4096;
+ 147   1              secoff = WriteAddr % 4096;
+ 148   1              secremain = 4096 - secoff;
+ 149   1              if(NumByteToWrite <= secremain)
+ 150   1                      secremain = NumByteToWrite;
+ 151   1              while(1) 
+ 152   1              {       
+ 153   2                      w25qxx_read(W25QXX_BUF,secpos*4096,4096);
+ 154   2                      for(i = 0; i < secremain; i++)
+ 155   2                      {
+ 156   3                              if(W25QXX_BUF[secoff+i] != 0XFF)
+ 157   3                                      break;
+ 158   3                      }
+ 159   2                      if(i < secremain)
+ 160   2                      {
+ 161   3                              w25qxx_erase_sector(secpos);
+ 162   3                              for(i = 0; i < secremain; i++)
+ 163   3                              {
+ 164   4                                      W25QXX_BUF[i+secoff] = pBuffer[i];        
+ 165   4                              }
+ 166   3                              w25qxx_write_no_check(W25QXX_BUF,secpos*4096,4096);
+ 167   3                      }
+ 168   2                      else 
+ 169   2                              w25qxx_write_no_check(pBuffer,WriteAddr,secremain);                                
+ 170   2                      if(NumByteToWrite == secremain)
+ 171   2                              break;
+ 172   2                      else
+ 173   2                      {
+ 174   3                              secpos++;
+ 175   3                              secoff = 0; 
+ 176   3                          pBuffer += secremain;
+ 177   3                              WriteAddr += secremain;  
+C51 COMPILER V9.00   W25QXX                                                                08/31/2019 16:17:41 PAGE 4   
+
+ 178   3                          NumByteToWrite -= secremain;
+ 179   3                              if(NumByteToWrite>4096)
+ 180   3                                      secremain = 4096;
+ 181   3                              else 
+ 182   3                                      secremain = NumByteToWrite;
+ 183   3                      }        
+ 184   2              };       
+ 185   1      }
+ 186           
+ 187          void w25qxx_erase_chip(void)
+ 188          {
+ 189   1              w25qxx_write_enable();
+ 190   1              w25qxx_wait_busy(); 
+ 191   1              GPIO_ResetBits(P03);
+ 192   1              spi_read_write_byte(W25QXX_CHIP_ERASE);
+ 193   1              GPIO_SetBits(P03);
+ 194   1              w25qxx_wait_busy(); 
+ 195   1      }
+ 196          
+ 197          void w25qxx_erase_sector(unsigned int addr)
+ 198          {
+ 199   1              w25qxx_write_enable();
+ 200   1              w25qxx_wait_busy();   
+ 201   1              GPIO_ResetBits(P03);
+ 202   1              spi_read_write_byte(W25QXX_SECTOR_ERASE);
+ 203   1              spi_read_write_byte((unsigned char)(addr>>16)&0xff);
+ 204   1              spi_read_write_byte((unsigned char)(addr>>8)&0xff);
+ 205   1              spi_read_write_byte((unsigned char)addr&0xff);
+ 206   1              GPIO_SetBits(P03);
+ 207   1              w25qxx_wait_busy();
+ 208   1      }
+ 209          
+ 210          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1125    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   4096    ----
+   PDATA SIZE       =   ----      50
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

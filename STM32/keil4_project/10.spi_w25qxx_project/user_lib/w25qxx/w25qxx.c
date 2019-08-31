@@ -76,10 +76,10 @@ void w25qxx_read(unsigned char *pBuffer, unsigned int ReadAddr, unsigned int Num
 { 
  	unsigned int i;   										    
 	GPIO_ResetBits(GPIOB,GPIO_Pin_12);  
-  spi_read_write_byte(W25QXX_READ_DATA); 
-  spi_read_write_byte((unsigned char)((ReadAddr)>>16));   
-  spi_read_write_byte((unsigned char)((ReadAddr)>>8));   
-  spi_read_write_byte((unsigned char)ReadAddr);   
+	spi_read_write_byte(W25QXX_READ_DATA); 
+	spi_read_write_byte((unsigned char)((ReadAddr)>>16));   
+	spi_read_write_byte((unsigned char)((ReadAddr)>>8));   
+	spi_read_write_byte((unsigned char)ReadAddr);   
 	for(i = 0; i < NumByteToRead; i++) { 
 			pBuffer[i] = spi_read_write_byte(0XFF);
 	}
