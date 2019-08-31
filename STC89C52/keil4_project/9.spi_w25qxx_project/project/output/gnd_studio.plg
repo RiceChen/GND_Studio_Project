@@ -1,0 +1,1614 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\aPrivateDoc\321\GND_Studio_Project\STC89C52\keil4_project\9.spi_w25qxx_project\project\gnd_studio.uvproj
+Project File Date:  08/30/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(13): error C202: 'TRUE': undefined identifier
+..\MAIN\MAIN.C(14): error C202: 'TRUE': undefined identifier
+compiling delay.c...
+compiling spi.c...
+..\USER_LIB\SPI\SPI.C(11): error C202: 'P03': undefined identifier
+..\USER_LIB\SPI\SPI.C(12): error C202: 'P00': undefined identifier
+..\USER_LIB\SPI\SPI.C(13): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(18): error C202: 'TRUE': undefined identifier
+..\USER_LIB\SPI\SPI.C(27): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(28): error C202: 'P01': undefined identifier
+..\USER_LIB\SPI\SPI.C(32): error C202: 'P00': undefined identifier
+..\USER_LIB\SPI\SPI.C(33): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(34): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(36): error C202: 'P01': undefined identifier
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(31): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(34): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(40): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(43): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(48): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(50): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(55): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(57): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(68): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(75): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(82): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(89): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(95): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(97): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(99): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(106): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(114): error C202: 'P03': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(21): warning C206: 'w25qxx_write': missing function-prototype
+..\MAIN\MAIN.C(21): error C267: 'w25qxx_write': requires ANSI-style prototype
+..\MAIN\MAIN.C(21): error C202: 'FLASH_SIZE': undefined identifier
+..\MAIN\MAIN.C(23): error C202: 'FLASH_SIZE': undefined identifier
+compiling delay.c...
+compiling spi.c...
+..\USER_LIB\SPI\SPI.C(11): error C202: 'P03': undefined identifier
+..\USER_LIB\SPI\SPI.C(12): error C202: 'P00': undefined identifier
+..\USER_LIB\SPI\SPI.C(13): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(18): error C202: 'TRUE': undefined identifier
+..\USER_LIB\SPI\SPI.C(27): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(28): error C202: 'P01': undefined identifier
+..\USER_LIB\SPI\SPI.C(32): error C202: 'P00': undefined identifier
+..\USER_LIB\SPI\SPI.C(33): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(34): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(36): error C202: 'P01': undefined identifier
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(31): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(34): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(40): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(43): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(48): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(50): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(55): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(57): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(68): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(75): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(82): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(89): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(95): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(97): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(99): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(106): error C202: 'P03': undefined identifier
+..\USER_LIB\W25QXX\W25QXX.C(114): error C202: 'P03': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(21): warning C206: 'w25qxx_write': missing function-prototype
+..\MAIN\MAIN.C(21): error C267: 'w25qxx_write': requires ANSI-style prototype
+..\MAIN\MAIN.C(21): error C202: 'FLASH_SIZE': undefined identifier
+..\MAIN\MAIN.C(23): error C202: 'FLASH_SIZE': undefined identifier
+compiling delay.c...
+compiling spi.c...
+..\USER_LIB\SPI\SPI.C(11): error C202: 'P03': undefined identifier
+..\USER_LIB\SPI\SPI.C(12): error C202: 'P00': undefined identifier
+..\USER_LIB\SPI\SPI.C(13): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(18): error C202: 'TRUE': undefined identifier
+..\USER_LIB\SPI\SPI.C(27): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(28): error C202: 'P01': undefined identifier
+..\USER_LIB\SPI\SPI.C(32): error C202: 'P00': undefined identifier
+..\USER_LIB\SPI\SPI.C(33): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(34): error C202: 'P02': undefined identifier
+..\USER_LIB\SPI\SPI.C(36): error C202: 'P01': undefined identifier
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(116): warning C206: 'SPI_WriteRead': missing function-prototype
+..\USER_LIB\W25QXX\W25QXX.C(116): error C267: 'SPI_WriteRead': requires ANSI-style prototype
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(21): warning C206: 'w25qxx_write': missing function-prototype
+..\MAIN\MAIN.C(21): error C267: 'w25qxx_write': requires ANSI-style prototype
+..\MAIN\MAIN.C(21): error C202: 'FLASH_SIZE': undefined identifier
+..\MAIN\MAIN.C(23): error C202: 'FLASH_SIZE': undefined identifier
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(116): warning C206: 'SPI_WriteRead': missing function-prototype
+..\USER_LIB\W25QXX\W25QXX.C(116): error C267: 'SPI_WriteRead': requires ANSI-style prototype
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(21): warning C206: 'w25qxx_write': missing function-prototype
+..\MAIN\MAIN.C(21): error C267: 'w25qxx_write': requires ANSI-style prototype
+..\MAIN\MAIN.C(21): error C202: 'FLASH_SIZE': undefined identifier
+..\MAIN\MAIN.C(23): error C202: 'FLASH_SIZE': undefined identifier
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(21): error C202: 'FLASH_SIZE': undefined identifier
+..\MAIN\MAIN.C(23): error C202: 'FLASH_SIZE': undefined identifier
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(21): error C202: 'FLASH_SIZE': undefined identifier
+..\MAIN\MAIN.C(23): error C202: 'FLASH_SIZE': undefined identifier
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_ERASE_SECTOR?W25QXX
+Program Size: data=55.1 xdata=0 code=1900
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_ERASE_SECTOR?W25QXX
+Program Size: data=55.1 xdata=0 code=1900
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(210): error C249: 'DATA': SEGMENT TOO LARGE
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(210): error C249: 'DATA': SEGMENT TOO LARGE
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=82.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=82.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=103.1 xdata=4096 code=2398
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2399
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=79.1 xdata=4096 code=2386
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2381
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=69.1 xdata=4096 code=2388
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(210): error C249: 'DATA': SEGMENT TOO LARGE
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+..\USER_LIB\W25QXX\W25QXX.C(210): error C249: 'PDATA': SEGMENT TOO LARGE
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4233 code=2809
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4233 code=2809
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4233 code=2809
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=105.1 xdata=4096 code=2406
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+*** ERROR L107: ADDRESS SPACE OVERFLOW
+    SPACE:   DATA    
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+    LENGTH:  0009H
+*** ERROR L105: PUBLIC REFERS TO IGNORED SEGMENT
+    SYMBOL:  ?_W25QXX_WRITE_NO_CHECK?BYTE
+    SEGMENT: ?DT?_W25QXX_WRITE_NO_CHECK?W25QXX
+Program Size: data=127.1 xdata=4096 code=2380
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4208 code=2666
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4191 code=2687
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(13): warning C280: 'read_buffer': unreferenced local variable
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_READ_ID?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=9.0 xdata=4204 code=1547
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 10 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+..\MAIN\MAIN.C(13): warning C280: 'read_buffer': unreferenced local variable
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_READ_ID?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE?W25QXX
+Program Size: data=9.0 xdata=4204 code=1550
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 9 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4191 code=2687
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4155 code=2669
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi.c...
+compiling usart.c...
+compiling w25qxx.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_W25QXX_WRITE_STATE_REGISTER?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_WRITE_DISABLE?W25QXX
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?W25QXX_ERASE_CHIP?W25QXX
+Program Size: data=15.1 xdata=4155 code=2669
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 6 Warning(s).
