@@ -7,10 +7,6 @@
         <h3>By</h3> Harry   Hoky   Alvin
     </h4>
 </div>
-
-<br>
-<br>
-<br>
 &#160;
 
 <h2>目录</h2>

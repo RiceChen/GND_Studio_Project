@@ -1,5 +1,10 @@
-# C51单片机源代码
-by GND工作室 `HokyGUAN`
+<div align="center">
+<h1>
+ C51单片机源代码
+ </h1>
+GND工作室&copy; 
+ <h3>By <h4>Hoky GUAN</h4></h3>
+</div>
 
  <div align="center">
    <img src='../pic/GND-logo.jpg' height="400" width="420"/>
