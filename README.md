@@ -4,7 +4,7 @@
         GND_Studio_Project
     </h1>
     <h4>
-        <h3>By</h3> Harry   Hoky   Alvin
+        <h3>By</h3> Rice   Hoky   Alvin
     </h4>
 </div>
 &#160;
