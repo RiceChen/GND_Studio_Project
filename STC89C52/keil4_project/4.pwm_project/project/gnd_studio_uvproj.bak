@@ -361,6 +361,11 @@
               <FileType>1</FileType>
               <FilePath>..\user_lib\delay\delay.c</FilePath>
             </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\pwm\pwm.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
