@@ -188,8 +188,8 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>2</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -202,12 +202,12 @@
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>3</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>35</CurrentLine>
@@ -216,29 +216,29 @@
       <FilenameWithoutPath>exit.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>7</ColumnNumber>
+      <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>12</CurrentLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user_lib\key\key.c</PathWithFileName>
       <FilenameWithoutPath>key.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>5</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>19</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>13</CurrentLine>
+      <CurrentLine>12</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\user_lib\led\led.c</PathWithFileName>
       <FilenameWithoutPath>led.c</FilenameWithoutPath>
@@ -246,7 +246,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>E:\aPrivateDoc\321\GND_Studio_Project\51单片机\keil4_project\3.key_irq_project\USER_LIB\KEY\KEY.H</PathWithFilename>
+    <PathWithFilename>E:\aPrivateDoc\321\GND_Studio_Project\STC89C52\keil4_project\3.key_irq_project\USER_LIB\EXIT\EXIT.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -272,7 +272,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\aPrivateDoc\321\GND_Studio_Project\51单片机\keil4_project\3.key_irq_project\USER_LIB\LED\LED.H</PathWithFilename>
+    <PathWithFilename>E:\aPrivateDoc\321\GND_Studio_Project\STC89C52\keil4_project\3.key_irq_project\USER_LIB\LED\LED.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -298,7 +298,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>E:\aPrivateDoc\321\GND_Studio_Project\51单片机\keil4_project\3.key_irq_project\USER_LIB\EXIT\EXIT.H</PathWithFilename>
+    <PathWithFilename>E:\aPrivateDoc\321\GND_Studio_Project\STC89C52\keil4_project\3.key_irq_project\USER_LIB\KEY\KEY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -1664,7 +1664,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>6</ActiveTab>
       <Documents>
         <Doc>
           <Name>..\main\main.c</Name>
@@ -1674,15 +1674,15 @@
         </Doc>
         <Doc>
           <Name>..\user_lib\led\led.c</Name>
-          <ColumnNumber>19</ColumnNumber>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>13</CurrentLine>
+          <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\user_lib\key\key.c</Name>
-          <ColumnNumber>7</ColumnNumber>
+          <ColumnNumber>1</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>12</CurrentLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\USER_LIB\KEY\KEY.H</Name>
@@ -1704,7 +1704,7 @@
         </Doc>
         <Doc>
           <Name>..\user_lib\exit\exit.c</Name>
-          <ColumnNumber>20</ColumnNumber>
+          <ColumnNumber>19</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>35</CurrentLine>
         </Doc>

@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\aPrivateDoc\321\GND_Studio_Project\STC89C52\keil4_project\2.key_project\project\gnd_studio.uvproj
+Project File Date:  08/30/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling key.c...
+compiling led.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+Program Size: data=9.0 xdata=0 code=115
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling key.c...
+compiling led.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_10US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_5US?DELAY
+Program Size: data=9.0 xdata=0 code=115
+creating hex file from ".\output\gnd_studio"...
+".\output\gnd_studio" - 0 Error(s), 3 Warning(s).

@@ -9,8 +9,7 @@
 
 void led_init()
 {
-	GPIO_ResetBits(P22);
-	GPIO_ResetBits(P24);
+
 }
 
 void led_enable(char enable)

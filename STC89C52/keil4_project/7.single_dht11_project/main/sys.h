@@ -1,7 +1,14 @@
+/***************************************************
+ *         Author: Hoky GUAN                       *
+ *         Date  : 2019/7/25                       *
+ *         Last  : 2019/7/25                       *
+ *         Notes : sys.h                           *
+ **************************************************/
 #ifndef _SYS_H_
 #define _SYS_H_
 
 #include <reg52.h>
+#include <stdio.h>
 
 sbit P00 = P0^0;
 sbit P01 = P0^1;
@@ -41,8 +48,13 @@ sbit P37 = P3^7;
 #define Bit_RESET 0
 #define Bit_SET 1
 
+#define OLED_TEXT_SIZE_6X8 0
+#define OLED_TEXT_SIZE_8X16 1
+
 #define GPIO_SetBits(X) (X)=1
 #define GPIO_ResetBits(X) (X)=0
+#define GPIO_ReadInputDataBit(X) (X)
 
+#define pwm P22
 
 #endif

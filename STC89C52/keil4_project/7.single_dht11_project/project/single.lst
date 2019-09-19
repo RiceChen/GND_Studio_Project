@@ -1,4 +1,4 @@
-C51 COMPILER V9.00   SINGLE                                                                08/23/2019 11:40:28 PAGE 1   
+C51 COMPILER V9.00   SINGLE                                                                09/18/2019 16:58:45 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE SINGLE
@@ -23,67 +23,68 @@ line level    source
   13          {
   14   1              if(enable == TRUE)
   15   1              {
-  16   2                      P16 = 1;
+  16   2                      GPIO_SetBits(P16);
   17   2              }
   18   1      }
   19          
   20          void single_set_pin(void)
   21          {
-  22   1              P16 = 1;
+  22   1              GPIO_SetBits(P16);
   23   1      }
   24          
   25          void single_reset_pin(void)
   26          {
-  27   1              P16 = 0;
+  27   1              GPIO_ResetBits(P16);
   28   1      }
   29          
   30          unsigned char single_read_pin(void)
   31          {
-  32   1              return P16;
+  32   1              return GPIO_ReadInputDataBit(P16);
   33   1      }
   34          
   35          unsigned char single_read_byte(void)
   36          {
-  37   1              /* unsigned char i, value=0;
+  37   1              unsigned char i, value=0;
   38   1              for(i=0;i<8;i++)
   39   1              {          
-  40   1              while(Data == 0);
-  41   1                      delay_10us();
-  42   1                      delay_10us();
-  43   1                      delay_10us();
-  44   1                      delay_10us();
-  45   1                      value<<=1;
-  46   1                      if(Data == 1)     
-  47   1                      value=value|0x01;
-  48   1              while(Data == 1);    
-  49   1          }  
-  50   1          return value; */
-  51   1              unsigned char i, value=0;
-  52   1              for(i=0;i<8;i++)    
-  53   1              {
-  54   2                      while(single_read_pin() == Bit_RESET);
-C51 COMPILER V9.00   SINGLE                                                                08/23/2019 11:40:28 PAGE 2   
+  40   2              while(single_read_pin() == 0);
+  41   2                      delay_10us();
+  42   2                      delay_10us();
+  43   2                      delay_10us();
+  44   2                      delay_10us();
+  45   2                      value<<=1;
+  46   2                      if(single_read_pin())     
+  47   2                      value=value|0x01;
+  48   2              while(single_read_pin());    
+  49   2          }  
+  50   1          return value; 
+  51   1      //      unsigned char i, value=0;
+  52   1      //      for(i=0;i<8;i++)    
+  53   1      //      {
+  54   1      //              while(single_read_pin() == Bit_RESET);
+C51 COMPILER V9.00   SINGLE                                                                09/18/2019 16:58:45 PAGE 2   
 
-  55   2                      delay_10us();
-  56   2                      delay_10us();
-  57   2                      delay_10us();
-  58   2                      delay_10us();
-  59   2                      if(single_read_pin() == Bit_SET)
-  60   2                      {
-  61   3                              while(single_read_pin() == Bit_SET);
-  62   3                              value|=(unsigned char)(0x01<<(7-i));
-  63   3                      }
-  64   2                      else
-  65   2                      {                          
-  66   3                              value&=(unsigned char)~(0x01<<(7-i));
-  67   3                      }
-  68   2              }
-  69   1              return value;
-  70   1      }
+  55   1      //              delay_10us();
+  56   1      //              delay_10us();
+  57   1      //              delay_10us();
+  58   1      //              delay_10us();
+  59   1      //              delay_10us();
+  60   1      //              if(single_read_pin() == Bit_SET)
+  61   1      //              {
+  62   1      //                      while(single_read_pin() == Bit_SET);
+  63   1      //                      value|=(unsigned char)(0x01<<(7-i));
+  64   1      //              }
+  65   1      //              else
+  66   1      //              {                          
+  67   1      //                      value&=(unsigned char)~(0x01<<(7-i));
+  68   1      //              }
+  69   1      //      }
+  70   1      //      return value;
+  71   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    108    ----
+   CODE SIZE        =     74    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

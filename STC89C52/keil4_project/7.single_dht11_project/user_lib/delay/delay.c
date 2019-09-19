@@ -16,7 +16,7 @@ void delay_ms(unsigned int xms)
     }
 }
 
-void delay_us(unsigned int xus)	//用于大于10us，精度不高
+void delay_us(unsigned int xus)
 { 	
 	unsigned char i;
 	i = xus;
@@ -26,6 +26,7 @@ void delay_us(unsigned int xus)	//用于大于10us，精度不高
 void delay_10us() 
 { 
 	unsigned char i;
+
 	i = 2;
 	while (--i);
 }

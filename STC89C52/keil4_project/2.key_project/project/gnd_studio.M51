@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        08/24/2019  23:32:52  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/18/2019  11:29:31  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -37,8 +37,8 @@ LINK MAP OF MODULE:  .\output\gnd_studio (MAIN)
             CODE    0064H     0005H     UNIT         ?PR?DELAY_10US?DELAY
             CODE    0069H     0005H     UNIT         ?PR?LED_INIT?LED
             CODE    006EH     0003H     UNIT         ?PR?_DELAY_US?DELAY
-            CODE    0071H     0003H     UNIT         ?PR?KEY_INIT?KEY
-            CODE    0074H     0001H     UNIT         ?PR?DELAY_5US?DELAY
+            CODE    0071H     0001H     UNIT         ?PR?DELAY_5US?DELAY
+            CODE    0072H     0001H     UNIT         ?PR?KEY_INIT?KEY
 
 
 
@@ -59,7 +59,7 @@ SEGMENT
 ?PR?_LED_ENABLE?LED
   +--> ?PR?LED_INIT?LED
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/24/2019  23:32:52  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  11:29:31  PAGE 2
 
 
 ?PR?_KEY_ENABLE?KEY
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   C:0031H         LINE#         35
   C:0033H         LINE#         36
   C:0033H         LINE#         37
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/24/2019  23:32:52  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  11:29:31  PAGE 3
 
 
   -------         ENDPROC       MAIN
@@ -132,7 +132,7 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
   D:00A8H         PUBLIC        IE
-  C:0074H         PUBLIC        delay_5us
+  C:0071H         PUBLIC        delay_5us
   D:00B8H         PUBLIC        IP
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
@@ -176,10 +176,10 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   C:0068H         LINE#         31
   -------         ENDPROC       DELAY_10US
   -------         PROC          DELAY_5US
-  C:0074H         LINE#         33
-  C:0074H         LINE#         34
-  C:0074H         LINE#         35
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/24/2019  23:32:52  PAGE 4
+  C:0071H         LINE#         33
+  C:0071H         LINE#         34
+  C:0071H         LINE#         35
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  11:29:31  PAGE 4
 
 
   -------         ENDPROC       DELAY_5US
@@ -196,15 +196,13 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   D:00B8H         PUBLIC        IP
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  B:00B0H.3       PUBLIC        P33
-  C:0071H         PUBLIC        key_init
+  C:0072H         PUBLIC        key_init
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          KEY_INIT
-  C:0071H         LINE#         4
-  C:0071H         LINE#         5
-  C:0071H         LINE#         6
-  C:0073H         LINE#         7
+  C:0072H         LINE#         4
+  C:0072H         LINE#         5
+  C:0072H         LINE#         7
   -------         ENDPROC       KEY_INIT
   -------         PROC          _KEY_ENABLE
   D:0007H         SYMBOL        enable
@@ -239,11 +237,11 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   C:0069H         LINE#         5
   C:0069H         LINE#         6
   C:006BH         LINE#         7
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/24/2019  23:32:52  PAGE 5
-
-
   C:006DH         LINE#         8
   -------         ENDPROC       LED_INIT
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  11:29:31  PAGE 5
+
+
   -------         PROC          _LED_ENABLE
   D:0007H         SYMBOL        enable
   C:005DH         LINE#         10
@@ -265,5 +263,5 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?DELAY_5US?DELAY
 
-Program Size: data=9.0 xdata=0 code=117
+Program Size: data=9.0 xdata=0 code=115
 LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)

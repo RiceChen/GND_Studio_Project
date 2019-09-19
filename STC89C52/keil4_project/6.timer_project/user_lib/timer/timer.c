@@ -38,7 +38,7 @@ void timer()interrupt 1
 	if(i == 0)
 	{
 		i = 20;
-		GPIO_SetBits(P12);
+		GPIO_SetBits(P22);
 		delay_ms(100);
 	}
 	TR0 = 1;

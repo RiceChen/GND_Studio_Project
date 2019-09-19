@@ -15,17 +15,17 @@ unsigned char dht11_read_data(void);
 
 typedef struct
 {
-	unsigned char humi_int;		//湿度整数
-	unsigned char humi_deci;	//湿度小数
-	unsigned char temp_int;		//温度整数
-	unsigned char temp_deci;	//温度小数
+	unsigned char humi_int;	
+	unsigned char humi_deci;
+	unsigned char temp_int;	
+	unsigned char temp_deci;
 	unsigned char check_sum;
 		                 
 }dht11_data_t;
 
-unsigned int dht11_humi_int(void);
-unsigned int dht11_humi_deci(void);
-unsigned int dht11_temp_int(void);
-unsigned int dht11_temp_deci(void);
+unsigned char dht11_humi_int(void);
+unsigned char dht11_humi_deci(void);
+unsigned char dht11_temp_int(void);
+unsigned char dht11_temp_deci(void);
 
 #endif

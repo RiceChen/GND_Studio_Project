@@ -30,8 +30,8 @@ void exit1() interrupt 2
 	delay_ms(10);
 	if(GPIO_ReadInputDataBit(P33) == 0)
 	{
-		GPIO_SetBits(P12);
+		GPIO_SetBits(P22);
 		delay_ms(100);
-		GPIO_ResetBits(P12);
+		GPIO_ResetBits(P22);
 	}
 }
