@@ -294,7 +294,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>..\main;..\user_lib\delay;..\user_lib\led;..\user_lib\timer</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -350,6 +350,26 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\main\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>user_lib</GroupName>
+          <Files>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\delay\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\led\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\timer\timer.c</FilePath>
             </File>
           </Files>
         </Group>

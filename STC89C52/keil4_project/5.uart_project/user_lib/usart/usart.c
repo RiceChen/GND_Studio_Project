@@ -7,6 +7,8 @@
 #include "sys.h"
 #include "usart.h"
 
+sfr AUXR   = 0x8E;
+
 void usart_init()
 {											  
 	SCON = 0x50;
@@ -20,6 +22,7 @@ void usart_init()
 	ES = 1;
 	EA = 1;
 	TI = 1;
+
 }
 
 void Usart_Enable(char enable)

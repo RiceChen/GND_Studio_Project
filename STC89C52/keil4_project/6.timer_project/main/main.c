@@ -10,6 +10,6 @@ void main()
 	timer_enable(TRUE);
 	for(;;)
 	{
-		GPIO_ResetBits(P12);
+		GPIO_ResetBits(P22);
 	}
 }

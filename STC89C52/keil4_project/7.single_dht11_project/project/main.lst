@@ -1,4 +1,4 @@
-C51 COMPILER V9.00   MAIN                                                                  08/23/2019 11:40:27 PAGE 1   
+C51 COMPILER V9.00   MAIN                                                                  09/18/2019 16:58:45 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
@@ -15,32 +15,37 @@ line level    source
    5          #include "dht11.h"
    6          #include "usart.h"
    7          
-   8          void main()
-   9          {
-  10   1              Usart_Enable(TRUE);
-  11   1              dht11_enable(TRUE);
-  12   1              for(;;)
-  13   1              {
-  14   2                      if(dht11_read_data() == TRUE)
-  15   2                      {
-  16   3                              printf("湿度为%d.%d ％RH ，温度为 %d.%d℃ \n", dht11_humi_int(), dht11_humi_deci(), dht11_temp_int(), d
-             -ht11_temp_deci());
-  17   3                      }
-  18   2                      else
+   8          unsigned char i=0;
+   9          
+  10          void main()
+  11          {
+  12   1              Usart_Enable(TRUE);
+  13   1              dht11_enable(TRUE);
+  14   1              
+  15   1              for(;;)
+  16   1              {
+  17   2                      printf("%d\n",(int)i);
+  18   2                      if(dht11_read_data() == TRUE)
   19   2                      {
-  20   3                              printf("read error\n");
+  20   3                              printf("湿度为%d.%d ％RH ，温度为 %d.%d℃ \n", (int)dht11_humi_int(), (int)dht11_humi_deci(), (int)dht1
+             -1_temp_int(), (int)dht11_temp_deci());
   21   3                      }
-  22   2                      delay_ms(1000);
-  23   2              }
-  24   1      }
+  22   2                      else
+  23   2                      {
+  24   3                              printf("read error\n");
+  25   3                      }
+  26   2                      delay_ms(5000);
+  27   2                      i++;
+  28   2              }
+  29   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     82    ----
-   CONSTANT SIZE    =     48    ----
+   CODE SIZE        =    108    ----
+   CONSTANT SIZE    =     52    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----    ----
+   DATA SIZE        =      1    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.

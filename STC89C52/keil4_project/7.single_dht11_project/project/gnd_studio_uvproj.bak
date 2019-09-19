@@ -42,7 +42,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\</OutputDirectory>
+          <OutputDirectory>.\output\</OutputDirectory>
           <OutputName>gnd_studio</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
@@ -294,7 +294,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\user_lib\delay;..\user_lib\usart;..\user_lib\dht11;..\user_lib\single</IncludePath>
+              <IncludePath>..\user_lib\delay;..\user_lib\usart;..\user_lib\dht11;..\user_lib\single;..\main</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>

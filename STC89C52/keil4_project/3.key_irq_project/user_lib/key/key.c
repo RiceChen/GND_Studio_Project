@@ -9,7 +9,7 @@
 
 void key_init()
 {
-	GPIO_SetBits(P33);					 		
+				 		
 }
 
 void key_enable(char enable)

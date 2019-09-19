@@ -294,7 +294,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>..\user_lib\delay;..\user_lib\usart;..\main</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -350,6 +350,21 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\main\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>user_lib</GroupName>
+          <Files>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\delay\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\usart\usart.c</FilePath>
             </File>
           </Files>
         </Group>
