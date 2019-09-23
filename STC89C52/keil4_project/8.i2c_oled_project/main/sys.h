@@ -9,6 +9,7 @@
 
 #include <reg52.h>
 #include <stdio.h>
+#include <intrins.h>
 
 sbit P00 = P0^0;
 sbit P01 = P0^1;
@@ -55,6 +56,7 @@ sbit P37 = P3^7;
 #define GPIO_ResetBits(X) (X)=0
 #define GPIO_ReadInputDataBit(X) (X)
 
+#define I2CDelay() {_nop_();_nop_();_nop_();_nop_();}
 #define pwm P22
 
 #endif

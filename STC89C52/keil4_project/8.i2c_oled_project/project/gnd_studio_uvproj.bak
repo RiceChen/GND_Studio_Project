@@ -294,7 +294,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\main;..\user_lib\delay;..\user_lib\iic;..\user_lib\oled</IncludePath>
+              <IncludePath>..\main;..\user_lib\delay;..\user_lib\iic;..\user_lib\oled;..\user_lib\usart</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -370,6 +370,11 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user_lib\oled\oled.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user_lib\usart\usart.c</FilePath>
             </File>
           </Files>
         </Group>
