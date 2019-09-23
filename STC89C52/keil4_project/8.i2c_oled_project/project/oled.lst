@@ -1,4 +1,4 @@
-C51 COMPILER V9.00   OLED                                                                  08/29/2019 15:39:31 PAGE 1   
+C51 COMPILER V9.00   OLED                                                                  09/23/2019 15:35:06 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE OLED
@@ -32,134 +32,136 @@ line level    source
   22          
   23          static void oled_write_command(unsigned char IIC_Command)
   24          {
-  25   1              IIC_Start();
-  26   1              IIC_Write_Byte(0x78);            //Slave address,SA0=0
-  27   1              IIC_Write_Byte(0x00);                   //write command
-  28   1              IIC_Write_Byte(IIC_Command);
-  29   1              IIC_Stop();
-  30   1      }
-  31          
-  32          static void oled_set_pos(unsigned char x, unsigned char y) 
-  33          { 
-  34   1              oled_write_command(0xb0+y);
-  35   1              oled_write_command(((x&0xf0)>>4)|0x10);
-  36   1              oled_write_command((x&0x0f)|0x01);
-  37   1      } 
-  38          
-  39          void oled_fill(unsigned char bmp_dat) 
-  40          {
-  41   1              unsigned char y,x;
-  42   1              for(y=0;y<8;y++)
-  43   1              {
-  44   2                      oled_write_command(0xb0+y);
-  45   2                      oled_write_command(0x01);
-  46   2                      oled_write_command(0x10);
-  47   2                      for(x=0;x<128;x++)
-  48   2                              oled_write_data(bmp_dat);
-  49   2              }
-  50   1      }
-  51          
-  52          void oled_cls(void)
-  53          {
-  54   1              unsigned char y,x;
-C51 COMPILER V9.00   OLED                                                                  08/29/2019 15:39:31 PAGE 2   
+  25   1              
+  26   1              IIC_Start();
+  27   1              IIC_Write_Byte(0x78);            //Slave address,SA0=0
+  28   1              IIC_Write_Byte(0x00);                   //write command
+  29   1              IIC_Write_Byte(IIC_Command);
+  30   1              IIC_Stop();
+  31   1      }
+  32          
+  33          static void oled_set_pos(unsigned char x, unsigned char y) 
+  34          { 
+  35   1              oled_write_command(0xb0+y);
+  36   1              oled_write_command(((x&0xf0)>>4)|0x10);
+  37   1              oled_write_command((x&0x0f)|0x01);
+  38   1      } 
+  39          
+  40          void oled_fill(unsigned char bmp_dat) 
+  41          {
+  42   1              unsigned char y,x;
+  43   1              for(y=0;y<8;y++)
+  44   1              {
+  45   2                      oled_write_command(0xb0+y);
+  46   2                      oled_write_command(0x01);
+  47   2                      oled_write_command(0x10);
+  48   2                      for(x=0;x<128;x++)
+  49   2                              oled_write_data(bmp_dat);
+  50   2                              
+  51   2              }
+  52   1      }
+  53          
+  54          void oled_cls(void)
+C51 COMPILER V9.00   OLED                                                                  09/23/2019 15:35:06 PAGE 2   
 
-  55   1              for(y=0;y<8;y++)
-  56   1              {
-  57   2                      oled_write_command(0xb0+y);
-  58   2                      oled_write_command(0x01);
-  59   2                      oled_write_command(0x10);
-  60   2                      for(x=0;x<128;x++)
-  61   2                              oled_write_data(0);
-  62   2              }
-  63   1      }
-  64          
-  65          void oled_init()
-  66          {
-  67   1              delay_ms(500);//初始化之前的延时很重要！
-  68   1              oled_write_command(0xae);//--turn off oled panel
-  69   1              oled_write_command(0x00);//---set low column address
-  70   1              oled_write_command(0x10);//---set high column address
-  71   1              oled_write_command(0x40);//--set start line address  Set Mapping RAM Display Start Line (0x00~0x3F)
-  72   1              oled_write_command(0x81);//--set contrast control register
-  73   1              oled_write_command(0xff); // Set SEG Output Current Brightness
-  74   1              oled_write_command(0xa1);//--Set SEG/Column Mapping     0xa0左右反置 0xa1正常
-  75   1              oled_write_command(0xc8);//Set COM/Row Scan Direction   0xc0上下反置 0xc8正常
-  76   1              oled_write_command(0xa6);//--set normal display
-  77   1              oled_write_command(0xa8);//--set multiplex ratio(1 to 64)
-  78   1              oled_write_command(0x3f);//--1/64 duty
-  79   1              oled_write_command(0xd3);//-set display offset  Shift Mapping RAM Counter (0x00~0x3F)
-  80   1              oled_write_command(0x00);//-not offset
-  81   1              oled_write_command(0xd5);//--set display clock divide ratio/oscillator frequency
-  82   1              oled_write_command(0x80);//--set divide ratio, Set Clock as 100 Frames/Sec
-  83   1              oled_write_command(0xd9);//--set pre-charge period
-  84   1              oled_write_command(0xf1);//Set Pre-Charge as 15 Clocks & Discharge as 1 Clock
-  85   1              oled_write_command(0xda);//--set com pins hardware configuration
-  86   1              oled_write_command(0x12);
-  87   1              oled_write_command(0xdb);//--set vcomh
-  88   1              oled_write_command(0x40);//Set VCOM Deselect Level
-  89   1              oled_write_command(0x20);//-Set Page Addressing Mode (0x00/0x01/0x02)
-  90   1              oled_write_command(0x02);//
-  91   1              oled_write_command(0x8d);//--set Charge Pump enable/disable
-  92   1              oled_write_command(0x14);//--set(0x10) disable
-  93   1              oled_write_command(0xa4);// Disable Entire Display On (0xa4/0xa5)
-  94   1              oled_write_command(0xa6);// Disable Inverse Display On (0xa6/a7) 
-  95   1              oled_write_command(0xaf);//--turn on oled panel
-  96   1      } 
-  97          
-  98          void oled_enable(char enable)
-  99          {
- 100   1              if(enable == TRUE)
- 101   1              {
- 102   2                      oled_init();
- 103   2              }
- 104   1      }
- 105          
- 106          void oled_show_string(unsigned char x, y,unsigned char *ch, unsigned char text_size)
- 107          {
- 108   1              unsigned char c=0,i=0,j=0;
- 109   1              switch(text_size)
- 110   1              {
- 111   2                      case OLED_TEXT_SIZE_6X8:
- 112   2                      {
- 113   3                              while(ch[j] != '\0') {
- 114   4                                      c = ch[j] - 32;
- 115   4                                      if(x > 126) {
- 116   5                                              x = 0;
-C51 COMPILER V9.00   OLED                                                                  08/29/2019 15:39:31 PAGE 3   
+  55          {
+  56   1              unsigned char y,x;
+  57   1              for(y=0;y<8;y++)
+  58   1              {
+  59   2                      oled_write_command(0xb0+y);
+  60   2                      oled_write_command(0x01);
+  61   2                      oled_write_command(0x10);
+  62   2                      for(x=0;x<128;x++)
+  63   2                              oled_write_data(0);
+  64   2              }
+  65   1      }
+  66          
+  67          void oled_init()
+  68          {
+  69   1              delay_ms(400);//初始化之前的延时很重要！
+  70   1              oled_write_command(0xae);//--turn off oled panel
+  71   1              oled_write_command(0x00);//---set low column address
+  72   1              oled_write_command(0x10);//---set high column address
+  73   1              oled_write_command(0x40);//--set start line address  Set Mapping RAM Display Start Line (0x00~0x3F)
+  74   1              oled_write_command(0x81);//--set contrast control register
+  75   1              oled_write_command(0xff); // Set SEG Output Current Brightness
+  76   1              oled_write_command(0xa1);//--Set SEG/Column Mapping     0xa0左右反置 0xa1正常
+  77   1              oled_write_command(0xc8);//Set COM/Row Scan Direction   0xc0上下反置 0xc8正常
+  78   1              oled_write_command(0xa6);//--set normal display
+  79   1              oled_write_command(0xa8);//--set multiplex ratio(1 to 64)
+  80   1              oled_write_command(0x3f);//--1/64 duty
+  81   1              oled_write_command(0xd3);//-set display offset  Shift Mapping RAM Counter (0x00~0x3F)
+  82   1              oled_write_command(0x00);//-not offset
+  83   1              oled_write_command(0xd5);//--set display clock divide ratio/oscillator frequency
+  84   1              oled_write_command(0x80);//--set divide ratio, Set Clock as 100 Frames/Sec
+  85   1              oled_write_command(0xd9);//--set pre-charge period
+  86   1              oled_write_command(0xf1);//Set Pre-Charge as 15 Clocks & Discharge as 1 Clock
+  87   1              oled_write_command(0xda);//--set com pins hardware configuration
+  88   1              oled_write_command(0x12);
+  89   1              oled_write_command(0xdb);//--set vcomh
+  90   1              oled_write_command(0x40);//Set VCOM Deselect Level
+  91   1              oled_write_command(0x20);//-Set Page Addressing Mode (0x00/0x01/0x02)
+  92   1              oled_write_command(0x02);//
+  93   1              oled_write_command(0x8d);//--set Charge Pump enable/disable
+  94   1              oled_write_command(0x14);//--set(0x10) disable
+  95   1              oled_write_command(0xa4);// Disable Entire Display On (0xa4/0xa5)
+  96   1              oled_write_command(0xa6);// Disable Inverse Display On (0xa6/a7) 
+  97   1              oled_write_command(0xaf);//--turn on oled panel
+  98   1      } 
+  99          
+ 100          void oled_enable(char enable)
+ 101          {
+ 102   1              if(enable == TRUE)
+ 103   1              {
+ 104   2                      oled_init();
+ 105   2              }
+ 106   1      }
+ 107          
+ 108          void oled_show_string(unsigned char x, y,unsigned char *ch, unsigned char text_size)
+ 109          {
+ 110   1              unsigned char c=0,i=0,j=0;
+ 111   1              switch(text_size)
+ 112   1              {
+ 113   2                      case OLED_TEXT_SIZE_6X8:
+ 114   2                      {
+ 115   3                              while(ch[j] != '\0') {
+ 116   4                                      c = ch[j] - 32;
+C51 COMPILER V9.00   OLED                                                                  09/23/2019 15:35:06 PAGE 3   
 
- 117   5                                              y++;
- 118   5                                      }
- 119   4                                      oled_set_pos(x,y);
- 120   4                                      for(i=0;i<6;i++) {
- 121   5                                              oled_write_data(F6x8[c][i]);
- 122   5                                      }
- 123   4                                      x += 6;
- 124   4                                      j++;
- 125   4                              }
- 126   3                      }
- 127   2                      break;
- 128   2                      case OLED_TEXT_SIZE_8X16:
- 129   2                      {
- 130   3                              while (ch[j]!='\0')
- 131   3                              {
- 132   4                                      c =ch[j]-32;
- 133   4                                      if(x>120){x=0;y++;}
- 134   4                                              oled_set_pos(x,y);
- 135   4                                      for(i=0;i<8;i++)
- 136   4                                              oled_write_data(F8X16[c*16+i]);
- 137   4                                      oled_set_pos(x,y+1);
- 138   4                                      for(i=0;i<8;i++)
- 139   4                                              oled_write_data(F8X16[c*16+i+8]);
- 140   4                                      x+=8;
- 141   4                                      j++;
- 142   4                              }
- 143   3                      }
- 144   2                      break;
- 145   2              }       
- 146   1      }
- 147          
- 148          
+ 117   4                                      if(x > 126) {
+ 118   5                                              x = 0;
+ 119   5                                              y++;
+ 120   5                                      }
+ 121   4                                      oled_set_pos(x,y);
+ 122   4                                      for(i=0;i<6;i++) {
+ 123   5                                              oled_write_data(F6x8[c][i]);
+ 124   5                                      }
+ 125   4                                      x += 6;
+ 126   4                                      j++;
+ 127   4                              }
+ 128   3                      }
+ 129   2                      break;
+ 130   2                      case OLED_TEXT_SIZE_8X16:
+ 131   2                      {
+ 132   3                              while (ch[j]!='\0')
+ 133   3                              {
+ 134   4                                      c =ch[j]-32;
+ 135   4                                      if(x>120){x=0;y++;}
+ 136   4                                              oled_set_pos(x,y);
+ 137   4                                      for(i=0;i<8;i++)
+ 138   4                                              oled_write_data(F8X16[c*16+i]);
+ 139   4                                      oled_set_pos(x,y+1);
+ 140   4                                      for(i=0;i<8;i++)
+ 141   4                                              oled_write_data(F8X16[c*16+i+8]);
+ 142   4                                      x+=8;
+ 143   4                                      j++;
+ 144   4                              }
+ 145   3                      }
+ 146   2                      break;
+ 147   2              }       
+ 148   1      }
+ 149          
+ 150          
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE

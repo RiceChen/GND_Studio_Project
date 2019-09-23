@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        09/18/2019  16:58:45  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/23/2019  15:47:04  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -48,29 +48,29 @@ LINK MAP OF MODULE:  .\output\gnd_studio (MAIN)
             CODE    035FH     008EH     UNIT         ?C?LIB_CODE
             CODE    03EDH     008CH     UNIT         ?C_C51STARTUP
             CODE    0479H     0077H     UNIT         ?PR?DHT11_READ_DATA?DHT11
-            CODE    04F0H     006CH     UNIT         ?PR?MAIN?MAIN
-            CODE    055CH     0038H     UNIT         ?PR?SINGLE_READ_BYTE?SINGLE
-            CODE    0594H     0034H     UNIT         ?CO?MAIN
-            CODE    05C8H     0027H     UNIT         ?PR?PUTCHAR?PUTCHAR
-            CODE    05EFH     0018H     UNIT         ?PR?USART_INIT?USART
-            CODE    0607H     0015H     UNIT         ?PR?_DELAY_MS?DELAY
-            CODE    061CH     0007H     UNIT         ?PR?_USART_ENABLE?USART
-            CODE    0623H     0006H     UNIT         ?PR?_SINGLE_ENABLE?SINGLE
-            CODE    0629H     0006H     UNIT         ?PR?SINGLE_READ_PIN?SINGLE
-            CODE    062FH     0005H     UNIT         ?PR?DELAY_10US?DELAY
-            CODE    0634H     0004H     UNIT         ?C_INITSEG
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 2
+            CODE    04F0H     005BH     UNIT         ?PR?MAIN?MAIN
+            CODE    054BH     0030H     UNIT         ?CO?MAIN
+            CODE    057BH     002FH     UNIT         ?PR?SINGLE_READ_BYTE?SINGLE
+            CODE    05AAH     0027H     UNIT         ?PR?PUTCHAR?PUTCHAR
+            CODE    05D1H     0018H     UNIT         ?PR?USART_INIT?USART
+            CODE    05E9H     0015H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    05FEH     0007H     UNIT         ?PR?_USART_ENABLE?USART
+            CODE    0605H     0006H     UNIT         ?PR?_SINGLE_ENABLE?SINGLE
+            CODE    060BH     0006H     UNIT         ?PR?SINGLE_READ_PIN?SINGLE
+            CODE    0611H     0005H     UNIT         ?PR?DELAY_10US?DELAY
+            CODE    0616H     0004H     UNIT         ?C_INITSEG
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 2
 
 
-            CODE    0638H     0003H     UNIT         ?PR?_DELAY_US?DELAY
-            CODE    063BH     0003H     UNIT         ?PR?_DHT11_ENABLE?DHT11
-            CODE    063EH     0003H     UNIT         ?PR?DHT11_HUMI_INT?DHT11
-            CODE    0641H     0003H     UNIT         ?PR?DHT11_HUMI_DECI?DHT11
-            CODE    0644H     0003H     UNIT         ?PR?DHT11_TEMP_INT?DHT11
-            CODE    0647H     0003H     UNIT         ?PR?DHT11_TEMP_DECI?DHT11
-            CODE    064AH     0003H     UNIT         ?PR?SINGLE_SET_PIN?SINGLE
-            CODE    064DH     0003H     UNIT         ?PR?SINGLE_RESET_PIN?SINGLE
-            CODE    0650H     0001H     UNIT         ?PR?DELAY_5US?DELAY
+            CODE    061AH     0003H     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    061DH     0003H     UNIT         ?PR?_DHT11_ENABLE?DHT11
+            CODE    0620H     0003H     UNIT         ?PR?DHT11_HUMI_INT?DHT11
+            CODE    0623H     0003H     UNIT         ?PR?DHT11_HUMI_DECI?DHT11
+            CODE    0626H     0003H     UNIT         ?PR?DHT11_TEMP_INT?DHT11
+            CODE    0629H     0003H     UNIT         ?PR?DHT11_TEMP_DECI?DHT11
+            CODE    062CH     0003H     UNIT         ?PR?SINGLE_SET_PIN?SINGLE
+            CODE    062FH     0003H     UNIT         ?PR?SINGLE_RESET_PIN?SINGLE
+            CODE    0632H     0001H     UNIT         ?PR?DELAY_5US?DELAY
 
 
 
@@ -87,13 +87,13 @@ SEGMENT                                BIT_GROUP          DATA_GROUP
 ?PR?MAIN?MAIN                       -----    -----      -----    -----
   +--> ?PR?_USART_ENABLE?USART
   +--> ?PR?_DHT11_ENABLE?DHT11
-  +--> ?CO?MAIN
-  +--> ?PR?PRINTF?PRINTF
   +--> ?PR?DHT11_READ_DATA?DHT11
   +--> ?PR?DHT11_HUMI_INT?DHT11
   +--> ?PR?DHT11_HUMI_DECI?DHT11
   +--> ?PR?DHT11_TEMP_INT?DHT11
   +--> ?PR?DHT11_TEMP_DECI?DHT11
+  +--> ?CO?MAIN
+  +--> ?PR?PRINTF?PRINTF
   +--> ?PR?_DELAY_MS?DELAY
 
 ?PR?_USART_ENABLE?USART             -----    -----      -----    -----
@@ -102,27 +102,26 @@ SEGMENT                                BIT_GROUP          DATA_GROUP
 ?PR?_DHT11_ENABLE?DHT11             -----    -----      -----    -----
   +--> ?PR?_SINGLE_ENABLE?SINGLE
 
-?PR?PRINTF?PRINTF                   0020H.0  0001H.1    0008H    0014H
-  +--> ?PR?PUTCHAR?PUTCHAR
-
 ?PR?DHT11_READ_DATA?DHT11           -----    -----      -----    -----
   +--> ?PR?_DELAY_MS?DELAY
   +--> ?PR?DELAY_10US?DELAY
   +--> ?PR?SINGLE_READ_BYTE?SINGLE
 
 ?PR?SINGLE_READ_BYTE?SINGLE         -----    -----      0008H    0002H
-  +--> ?PR?SINGLE_READ_PIN?SINGLE
   +--> ?PR?DELAY_10US?DELAY
+
+?PR?PRINTF?PRINTF                   0020H.0  0001H.1    0008H    0014H
+  +--> ?PR?PUTCHAR?PUTCHAR
 
 
 
 SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
 
   VALUE           TYPE          NAME
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 3
-
-
   ----------------------------------
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 3
+
+
 
   -------         MODULE        MAIN
   C:0000H         SYMBOL        _ICE_DUMMY_
@@ -143,19 +142,17 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   C:04F0H         LINE#         11
   C:04F0H         LINE#         12
   C:04F5H         LINE#         13
+  C:04FAH         LINE#         14
   C:04FAH         LINE#         15
   C:04FAH         LINE#         16
-  C:04FAH         LINE#         17
-  C:0509H         LINE#         18
-  C:0511H         LINE#         19
-  C:0511H         LINE#         20
-  C:0546H         LINE#         21
-  C:0548H         LINE#         23
-  C:0548H         LINE#         24
-  C:0551H         LINE#         25
-  C:0551H         LINE#         26
-  C:0558H         LINE#         27
-  C:055AH         LINE#         28
+  C:0502H         LINE#         17
+  C:0502H         LINE#         18
+  C:0537H         LINE#         19
+  C:0539H         LINE#         21
+  C:0539H         LINE#         22
+  C:0542H         LINE#         23
+  C:0542H         LINE#         24
+  C:0549H         LINE#         25
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
@@ -166,56 +163,56 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
   D:00A8H         PUBLIC        IE
-  C:0650H         PUBLIC        delay_5us
+  C:0632H         PUBLIC        delay_5us
   D:00B8H         PUBLIC        IP
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:062FH         PUBLIC        delay_10us
-  C:0607H         PUBLIC        _delay_ms
-  C:0638H         PUBLIC        _delay_us
+  C:0611H         PUBLIC        delay_10us
+  C:05E9H         PUBLIC        _delay_ms
+  C:061AH         PUBLIC        _delay_us
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        xms
   -------         DO            
   D:0005H         SYMBOL        i
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 4
-
-
   -------         ENDDO         
-  C:0607H         LINE#         10
-  C:0607H         LINE#         11
-  C:0607H         LINE#         13
-  C:0610H         LINE#         14
-  C:0610H         LINE#         15
-  C:061BH         LINE#         16
-  C:061BH         LINE#         17
+  C:05E9H         LINE#         10
+  C:05E9H         LINE#         11
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 4
+
+
+  C:05E9H         LINE#         13
+  C:05F2H         LINE#         14
+  C:05F2H         LINE#         15
+  C:05FDH         LINE#         16
+  C:05FDH         LINE#         17
   -------         ENDPROC       _DELAY_MS
   -------         PROC          _DELAY_US
   D:0006H         SYMBOL        xus
   -------         DO            
   D:0007H         SYMBOL        i
   -------         ENDDO         
-  C:0638H         LINE#         19
-  C:0638H         LINE#         20
-  C:0638H         LINE#         22
-  C:0638H         LINE#         23
-  C:063AH         LINE#         24
+  C:061AH         LINE#         19
+  C:061AH         LINE#         20
+  C:061AH         LINE#         22
+  C:061AH         LINE#         23
+  C:061CH         LINE#         24
   -------         ENDPROC       _DELAY_US
   -------         PROC          DELAY_10US
   -------         DO            
   D:0007H         SYMBOL        i
   -------         ENDDO         
-  C:062FH         LINE#         26
-  C:062FH         LINE#         27
-  C:062FH         LINE#         30
-  C:0631H         LINE#         31
-  C:0633H         LINE#         32
+  C:0611H         LINE#         26
+  C:0611H         LINE#         27
+  C:0611H         LINE#         30
+  C:0613H         LINE#         31
+  C:0615H         LINE#         32
   -------         ENDPROC       DELAY_10US
   -------         PROC          DELAY_5US
-  C:0650H         LINE#         34
-  C:0650H         LINE#         35
-  C:0650H         LINE#         36
+  C:0632H         LINE#         34
+  C:0632H         LINE#         35
+  C:0632H         LINE#         36
   -------         ENDPROC       DELAY_5US
   -------         ENDMOD        DELAY
 
@@ -229,88 +226,84 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   D:00B8H         PUBLIC        IP
   C:0479H         PUBLIC        dht11_read_data
   D:0022H         PUBLIC        dht11_data
-  C:0641H         PUBLIC        dht11_humi_deci
+  C:0623H         PUBLIC        dht11_humi_deci
   D:0098H         PUBLIC        SCON
-  C:0647H         PUBLIC        dht11_temp_deci
+  C:0629H         PUBLIC        dht11_temp_deci
   D:0088H         PUBLIC        TCON
   B:0090H.6       PUBLIC        P16
-  C:063EH         PUBLIC        dht11_humi_int
+  C:0620H         PUBLIC        dht11_humi_int
   D:00C8H         PUBLIC        T2CON
-  C:0644H         PUBLIC        dht11_temp_int
-  C:063BH         PUBLIC        _dht11_enable
+  C:0626H         PUBLIC        dht11_temp_int
+  C:061DH         PUBLIC        _dht11_enable
   D:00D0H         PUBLIC        PSW
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 5
-
-
   -------         PROC          _DHT11_ENABLE
   D:0007H         SYMBOL        enable
-  C:063BH         LINE#         15
-  C:063BH         LINE#         16
-  C:063BH         LINE#         17
+  C:061DH         LINE#         14
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 5
+
+
+  C:061DH         LINE#         15
+  C:061DH         LINE#         16
   -------         ENDPROC       _DHT11_ENABLE
   -------         PROC          DHT11_READ_DATA
+  C:0479H         LINE#         19
   C:0479H         LINE#         20
   C:0479H         LINE#         21
-  C:0479H         LINE#         23
-  C:047BH         LINE#         24
-  C:0482H         LINE#         26
-  C:0484H         LINE#         27
-  C:0487H         LINE#         28
-  C:048AH         LINE#         29
-  C:048DH         LINE#         30
-  C:0490H         LINE#         31
-  C:0490H         LINE#         32
-  C:0493H         LINE#         33
-  C:0496H         LINE#         34
-  C:0499H         LINE#         35
-  C:049CH         LINE#         36
-  C:049FH         LINE#         37
-  C:04A2H         LINE#         38
-  C:04A5H         LINE#         39
-  C:04A8H         LINE#         40
-  C:04ABH         LINE#         41
-  C:04B0H         LINE#         42
-  C:04B5H         LINE#         43
-  C:04BAH         LINE#         44
-  C:04BFH         LINE#         45
-  C:04C4H         LINE#         47
-  C:04C6H         LINE#         48
-  C:04E7H         LINE#         49
-  C:04E7H         LINE#         50
-  C:04EAH         LINE#         51
-  C:04EAH         LINE#         53
-  C:04EAH         LINE#         54
-  C:04EDH         LINE#         55
-  C:04EDH         LINE#         57
-  C:04EDH         LINE#         58
-  C:04EFH         LINE#         59
+  C:047BH         LINE#         22
+  C:0482H         LINE#         23
+  C:0484H         LINE#         24
+  C:0487H         LINE#         25
+  C:048AH         LINE#         26
+  C:048DH         LINE#         27
+  C:0490H         LINE#         28
+  C:0490H         LINE#         29
+  C:0493H         LINE#         30
+  C:0496H         LINE#         31
+  C:0499H         LINE#         32
+  C:049CH         LINE#         33
+  C:049FH         LINE#         34
+  C:04A2H         LINE#         35
+  C:04A5H         LINE#         36
+  C:04A8H         LINE#         37
+  C:04ABH         LINE#         38
+  C:04B0H         LINE#         39
+  C:04B5H         LINE#         40
+  C:04BAH         LINE#         41
+  C:04BFH         LINE#         42
+  C:04C4H         LINE#         43
+  C:04C6H         LINE#         44
+  C:04E7H         LINE#         45
+  C:04EAH         LINE#         47
+  C:04EDH         LINE#         48
+  C:04EDH         LINE#         50
+  C:04EFH         LINE#         51
   -------         ENDPROC       DHT11_READ_DATA
   -------         PROC          DHT11_HUMI_INT
-  C:063EH         LINE#         61
-  C:063EH         LINE#         62
-  C:063EH         LINE#         63
-  C:0640H         LINE#         64
+  C:0620H         LINE#         53
+  C:0620H         LINE#         54
+  C:0620H         LINE#         55
+  C:0622H         LINE#         56
   -------         ENDPROC       DHT11_HUMI_INT
   -------         PROC          DHT11_HUMI_DECI
-  C:0641H         LINE#         66
-  C:0641H         LINE#         67
-  C:0641H         LINE#         68
-  C:0643H         LINE#         69
+  C:0623H         LINE#         58
+  C:0623H         LINE#         59
+  C:0623H         LINE#         60
+  C:0625H         LINE#         61
   -------         ENDPROC       DHT11_HUMI_DECI
   -------         PROC          DHT11_TEMP_INT
-  C:0644H         LINE#         71
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 6
-
-
-  C:0644H         LINE#         72
-  C:0644H         LINE#         73
-  C:0646H         LINE#         74
+  C:0626H         LINE#         63
+  C:0626H         LINE#         64
+  C:0626H         LINE#         65
+  C:0628H         LINE#         66
   -------         ENDPROC       DHT11_TEMP_INT
   -------         PROC          DHT11_TEMP_DECI
-  C:0647H         LINE#         76
-  C:0647H         LINE#         77
-  C:0647H         LINE#         78
-  C:0649H         LINE#         79
+  C:0629H         LINE#         68
+  C:0629H         LINE#         69
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 6
+
+
+  C:0629H         LINE#         70
+  C:062BH         LINE#         71
   -------         ENDPROC       DHT11_TEMP_DECI
   -------         ENDMOD        DHT11
 
@@ -322,69 +315,69 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   D:00B0H         PUBLIC        P3
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
-  C:055CH         PUBLIC        single_read_byte
-  C:0629H         PUBLIC        single_read_pin
+  C:057BH         PUBLIC        single_read_byte
+  C:060BH         PUBLIC        single_read_pin
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:064DH         PUBLIC        single_reset_pin
+  C:062FH         PUBLIC        single_reset_pin
   B:0090H.6       PUBLIC        P16
-  C:0623H         PUBLIC        _single_enable
-  C:064AH         PUBLIC        single_set_pin
+  C:0605H         PUBLIC        _single_enable
+  C:062CH         PUBLIC        single_set_pin
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          _SINGLE_ENABLE
   D:0007H         SYMBOL        enable
-  C:0623H         LINE#         12
-  C:0623H         LINE#         13
-  C:0623H         LINE#         14
-  C:0626H         LINE#         15
-  C:0626H         LINE#         16
-  C:0628H         LINE#         17
-  C:0628H         LINE#         18
+  C:0605H         LINE#         12
+  C:0605H         LINE#         13
+  C:0605H         LINE#         14
+  C:0608H         LINE#         15
+  C:0608H         LINE#         16
+  C:060AH         LINE#         17
+  C:060AH         LINE#         18
   -------         ENDPROC       _SINGLE_ENABLE
   -------         PROC          SINGLE_SET_PIN
-  C:064AH         LINE#         20
-  C:064AH         LINE#         21
-  C:064AH         LINE#         22
-  C:064CH         LINE#         23
+  C:062CH         LINE#         20
+  C:062CH         LINE#         21
+  C:062CH         LINE#         22
+  C:062EH         LINE#         23
   -------         ENDPROC       SINGLE_SET_PIN
   -------         PROC          SINGLE_RESET_PIN
-  C:064DH         LINE#         25
-  C:064DH         LINE#         26
-  C:064DH         LINE#         27
-  C:064FH         LINE#         28
+  C:062FH         LINE#         25
+  C:062FH         LINE#         26
+  C:062FH         LINE#         27
+  C:0631H         LINE#         28
   -------         ENDPROC       SINGLE_RESET_PIN
   -------         PROC          SINGLE_READ_PIN
-  C:0629H         LINE#         30
-  C:0629H         LINE#         31
-  C:0629H         LINE#         32
-  C:062EH         LINE#         33
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 7
-
-
+  C:060BH         LINE#         30
+  C:060BH         LINE#         31
+  C:060BH         LINE#         32
+  C:0610H         LINE#         33
   -------         ENDPROC       SINGLE_READ_PIN
   -------         PROC          SINGLE_READ_BYTE
   -------         DO            
   D:0008H         SYMBOL        i
   D:0009H         SYMBOL        value
   -------         ENDDO         
-  C:055CH         LINE#         35
-  C:055CH         LINE#         36
-  C:055CH         LINE#         37
-  C:055FH         LINE#         38
-  C:0561H         LINE#         39
-  C:0561H         LINE#         40
-  C:0567H         LINE#         41
-  C:056AH         LINE#         42
-  C:056DH         LINE#         43
-  C:0570H         LINE#         44
-  C:0573H         LINE#         45
-  C:0579H         LINE#         46
-  C:057FH         LINE#         47
-  C:0582H         LINE#         48
-  C:0588H         LINE#         49
-  C:0591H         LINE#         50
-  C:0593H         LINE#         71
+  C:057BH         LINE#         35
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 7
+
+
+  C:057BH         LINE#         36
+  C:057BH         LINE#         37
+  C:057EH         LINE#         38
+  C:0580H         LINE#         39
+  C:0580H         LINE#         40
+  C:0583H         LINE#         41
+  C:0586H         LINE#         42
+  C:0589H         LINE#         43
+  C:058CH         LINE#         44
+  C:058FH         LINE#         45
+  C:0595H         LINE#         46
+  C:0598H         LINE#         47
+  C:059BH         LINE#         48
+  C:059EH         LINE#         49
+  C:05A7H         LINE#         50
+  C:05A9H         LINE#         51
   -------         ENDPROC       SINGLE_READ_BYTE
   -------         ENDMOD        SINGLE
 
@@ -403,39 +396,39 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   D:0098H         PUBLIC        SCON
   D:0089H         PUBLIC        TMOD
   D:0088H         PUBLIC        TCON
-  C:061CH         PUBLIC        _Usart_Enable
-  C:05EFH         PUBLIC        usart_init
+  C:05FEH         PUBLIC        _Usart_Enable
+  C:05D1H         PUBLIC        usart_init
   D:008DH         PUBLIC        TH1
   D:008BH         PUBLIC        TL1
   B:0088H.6       PUBLIC        TR1
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          USART_INIT
-  C:05EFH         LINE#         10
-  C:05EFH         LINE#         11
-  C:05EFH         LINE#         12
-  C:05F2H         LINE#         13
-  C:05F5H         LINE#         14
-  C:05F8H         LINE#         16
-  C:05FBH         LINE#         17
-  C:05FEH         LINE#         19
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 8
-
-
-  C:0600H         LINE#         20
-  C:0602H         LINE#         21
-  C:0604H         LINE#         22
-  C:0606H         LINE#         23
+  C:05D1H         LINE#         10
+  C:05D1H         LINE#         11
+  C:05D1H         LINE#         12
+  C:05D4H         LINE#         13
+  C:05D7H         LINE#         14
+  C:05DAH         LINE#         16
+  C:05DDH         LINE#         17
+  C:05E0H         LINE#         19
+  C:05E2H         LINE#         20
+  C:05E4H         LINE#         21
+  C:05E6H         LINE#         22
+  C:05E8H         LINE#         23
   -------         ENDPROC       USART_INIT
   -------         PROC          _USART_ENABLE
   D:0007H         SYMBOL        enable
-  C:061CH         LINE#         25
-  C:061CH         LINE#         26
-  C:061CH         LINE#         27
-  C:061FH         LINE#         28
-  C:061FH         LINE#         29
-  C:0622H         LINE#         30
-  C:0622H         LINE#         31
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 8
+
+
+  C:05FEH         LINE#         25
+  C:05FEH         LINE#         26
+  C:05FEH         LINE#         27
+  C:0601H         LINE#         28
+  C:0601H         LINE#         29
+  C:0604H         LINE#         30
+  C:0604H         LINE#         31
   -------         ENDPROC       _USART_ENABLE
   -------         ENDMOD        USART
 
@@ -471,7 +464,7 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
   -------         ENDMOD        ?C?CCASE
 
   -------         MODULE        PUTCHAR
-  C:05C8H         PUBLIC        _PUTCHAR
+  C:05AAH         PUBLIC        _PUTCHAR
   -------         ENDMOD        PUTCHAR
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
@@ -479,9 +472,6 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?DELAY_5US?DELAY
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/18/2019  16:58:45  PAGE 9
-
-
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?SINGLE_SET_PIN?SINGLE
@@ -489,5 +479,11 @@ SYMBOL TABLE OF MODULE:  .\output\gnd_studio (MAIN)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?SINGLE_RESET_PIN?SINGLE
 
-Program Size: data=36.1 xdata=0 code=1617
-LINK/LOCATE RUN COMPLETE.  4 WARNING(S),  0 ERROR(S)
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/23/2019  15:47:04  PAGE 9
+
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SINGLE_READ_PIN?SINGLE
+
+Program Size: data=36.1 xdata=0 code=1587
+LINK/LOCATE RUN COMPLETE.  5 WARNING(S),  0 ERROR(S)

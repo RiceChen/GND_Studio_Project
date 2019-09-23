@@ -11,7 +11,9 @@ void IIC_Start()
 {
    GPIO_SetBits(P14);		
    GPIO_SetBits(P15);
+   I2CDelay();
    GPIO_ResetBits(P15);
+   I2CDelay();
    GPIO_ResetBits(P14);
 }
 
@@ -19,7 +21,9 @@ void IIC_Stop()
 {
    GPIO_ResetBits(P14);
    GPIO_ResetBits(P15);
+   I2CDelay();
    GPIO_SetBits(P14);
+   I2CDelay();
    GPIO_SetBits(P15);
 }
 
@@ -28,7 +32,7 @@ void IIC_Enable(char enable)
 	if(enable == TRUE)
 	{
 		IIC_Start();
-	}
+	}																				   
 }
 
 void IIC_Write_Byte(unsigned char IIC_Byte)
@@ -40,11 +44,15 @@ void IIC_Write_Byte(unsigned char IIC_Byte)
 			GPIO_SetBits(P15);
 		else
 			GPIO_ResetBits(P15);
+		I2CDelay();
 		GPIO_SetBits(P14);
+		I2CDelay();
 		GPIO_ResetBits(P14);
 		IIC_Byte<<=1;
 	}
 	GPIO_SetBits(P15);
+	I2CDelay();
 	GPIO_SetBits(P14);
+	I2CDelay();
 	GPIO_ResetBits(P14);
 }

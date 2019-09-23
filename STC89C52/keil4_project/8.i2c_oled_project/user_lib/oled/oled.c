@@ -22,6 +22,7 @@ static void oled_write_data(unsigned char IIC_Data)
 
 static void oled_write_command(unsigned char IIC_Command)
 {
+	
 	IIC_Start();
 	IIC_Write_Byte(0x78);            //Slave address,SA0=0
 	IIC_Write_Byte(0x00);			//write command
@@ -46,6 +47,7 @@ void oled_fill(unsigned char bmp_dat)
 		oled_write_command(0x10);
 		for(x=0;x<128;x++)
 			oled_write_data(bmp_dat);
+			
 	}
 }
 
@@ -64,7 +66,7 @@ void oled_cls(void)
 
 void oled_init()
 {
-	delay_ms(500);//初始化之前的延时很重要！
+	delay_ms(400);//初始化之前的延时很重要！
 	oled_write_command(0xae);//--turn off oled panel
 	oled_write_command(0x00);//---set low column address
 	oled_write_command(0x10);//---set high column address

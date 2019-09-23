@@ -1,4 +1,4 @@
-C51 COMPILER V9.00   SINGLE                                                                09/18/2019 16:58:45 PAGE 1   
+C51 COMPILER V9.00   SINGLE                                                                09/23/2019 15:47:04 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE SINGLE
@@ -13,11 +13,11 @@ line level    source
    3           *         Date  : 2019/7/15                       *
    4           *         Last  : 2019/7/15                       *
    5           *         Notes : single.c                        *
-   6           *                 P1^6 | Data                     *
-   7           **************************************************/
-   8          #include "sys.h"
-   9          #include "single.h"
-  10          #include "delay.h"
+   6           **************************************************/
+   7          #include "sys.h"
+   8          #include "single.h"
+   9          #include "delay.h"
+  10          
   11          
   12          void single_enable(char enable)
   13          {
@@ -47,44 +47,24 @@ line level    source
   37   1              unsigned char i, value=0;
   38   1              for(i=0;i<8;i++)
   39   1              {          
-  40   2              while(single_read_pin() == 0);
+  40   2              while(P16 == 0);
   41   2                      delay_10us();
   42   2                      delay_10us();
   43   2                      delay_10us();
   44   2                      delay_10us();
   45   2                      value<<=1;
-  46   2                      if(single_read_pin())     
+  46   2                      if(P16 == 1)     
   47   2                      value=value|0x01;
-  48   2              while(single_read_pin());    
+  48   2              while(P16 == 1);    
   49   2          }  
-  50   1          return value; 
-  51   1      //      unsigned char i, value=0;
-  52   1      //      for(i=0;i<8;i++)    
-  53   1      //      {
-  54   1      //              while(single_read_pin() == Bit_RESET);
-C51 COMPILER V9.00   SINGLE                                                                09/18/2019 16:58:45 PAGE 2   
-
-  55   1      //              delay_10us();
-  56   1      //              delay_10us();
-  57   1      //              delay_10us();
-  58   1      //              delay_10us();
-  59   1      //              delay_10us();
-  60   1      //              if(single_read_pin() == Bit_SET)
-  61   1      //              {
-  62   1      //                      while(single_read_pin() == Bit_SET);
-  63   1      //                      value|=(unsigned char)(0x01<<(7-i));
-  64   1      //              }
-  65   1      //              else
-  66   1      //              {                          
-  67   1      //                      value&=(unsigned char)~(0x01<<(7-i));
-  68   1      //              }
-  69   1      //      }
-  70   1      //      return value;
-  71   1      }
+  50   1          return value;
+  51   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     74    ----
+C51 COMPILER V9.00   SINGLE                                                                09/23/2019 15:47:04 PAGE 2   
+
+   CODE SIZE        =     65    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
